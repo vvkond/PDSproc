@@ -1,0 +1,1774 @@
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 16:22:35 : Error! No such file or directory
+08/05/17 16:22:35 : Error! Execution stopped
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 16:59:03 : Error! Invalid argument
+08/05/17 16:59:03 : Error! Execution stopped
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 17:00:21 : Error! Invalid argument
+08/05/17 17:00:21 : Error! Execution stopped
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 17:04:43 : Error! Invalid argument
+08/05/17 17:04:43 : Error! Execution stopped
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 17:05:46 : reading points "temppoints" from file temppoints.txt
+08/05/17 17:05:46 : removing points "temppoints" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 17:07:20 : reading points "temppoints" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 17:07:20 : removing points "temppoints" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 18:45:21 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 18:45:21 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault2" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault3" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault4" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault5" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault6" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault7" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault8" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault9" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault10" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : loading curve "fault11" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:45:21 : grid: (592103 <-> 597280) / 50; (5.72323e+006 <-> 5.7283e+006) / 50. 105x102
+08/05/17 18:45:21 : creating gridding rule points("points1")
+08/05/17 18:45:21 : creating gridding rule fault("fault1")
+08/05/17 18:45:21 : creating gridding rule fault("fault2")
+08/05/17 18:45:21 : creating gridding rule fault("fault3")
+08/05/17 18:45:21 : creating gridding rule fault("fault4")
+08/05/17 18:45:21 : creating gridding rule fault("fault5")
+08/05/17 18:45:21 : creating gridding rule fault("fault6")
+08/05/17 18:45:21 : creating gridding rule fault("fault7")
+08/05/17 18:45:21 : creating gridding rule fault("fault8")
+08/05/17 18:45:21 : creating gridding rule fault("fault9")
+08/05/17 18:45:21 : creating gridding rule fault("fault10")
+08/05/17 18:45:21 : creating gridding rule fault("fault11")
+08/05/17 18:45:21 : creating gridding rule completer(0.5,2,0,1)
+08/05/17 18:45:21 : 
+08/05/17 18:45:21 : 
+08/05/17 18:45:21 : 
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : points : (points1)
+08/05/17 18:45:21 : completer : processing...
+08/05/17 18:45:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:45:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:45:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:45:21 : solving near fault lines...
+08/05/17 18:45:21 : cg: (64) ....... iter : 46, error : 4.85652E-007, 0 sec
+08/05/17 18:45:21 : completer : flood_areas_cnt = 7
+08/05/17 18:45:21 : completer : processing each isolated area (7)...
+08/05/17 18:45:21 : completer : isolated area N1
+08/05/17 18:45:21 : completer : isolated area N2
+08/05/17 18:45:21 : cg: (64)  - nothing to do.
+08/05/17 18:45:21 : completer : isolated area N3
+08/05/17 18:45:21 : completer : isolated area N4
+08/05/17 18:45:21 : cg: (64)  - nothing to do.
+08/05/17 18:45:21 : completer : isolated area N5
+08/05/17 18:45:21 : cg: (64)  - nothing to do.
+08/05/17 18:45:21 : completer : isolated area N6
+08/05/17 18:45:21 : cg: (64)  - nothing to do.
+08/05/17 18:45:21 : completer : isolated area N7
+08/05/17 18:45:21 : completer : processing whole area
+08/05/17 18:45:21 : cg: (64)  - nothing to do.
+08/05/17 18:45:21 : 
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : points : (points1)
+08/05/17 18:45:21 : completer : processing...
+08/05/17 18:45:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:45:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:45:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:45:21 : solving near fault lines...
+08/05/17 18:45:21 : cg: (256) ....... iter : 73, error : 6.43801E-006, 0 sec
+08/05/17 18:45:21 : completer : flood_areas_cnt = 6
+08/05/17 18:45:21 : completer : processing each isolated area (6)...
+08/05/17 18:45:21 : completer : isolated area N1
+08/05/17 18:45:21 : completer : isolated area N2
+08/05/17 18:45:21 : cg: (256) ....... iter : 85, error :  7.7917E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N3
+08/05/17 18:45:21 : cg: (256) ....... iter : 69, error : 8.49774E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N4
+08/05/17 18:45:21 : cg: (256) ....... iter : 1, error : 2.65938E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N5
+08/05/17 18:45:21 : completer : isolated area N6
+08/05/17 18:45:21 : cg: (256)  - nothing to do.
+08/05/17 18:45:21 : completer : processing whole area
+08/05/17 18:45:21 : cg: (256) ....... iter : 1, error : 1.81439E-006, 0 sec
+08/05/17 18:45:21 : 
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : points : (points1)
+08/05/17 18:45:21 : completer : processing...
+08/05/17 18:45:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:45:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:45:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:45:21 : solving near fault lines...
+08/05/17 18:45:21 : cg: (1024) ....... iter : 243, error : 9.66039E-006, 0 sec
+08/05/17 18:45:21 : completer : flood_areas_cnt = 9
+08/05/17 18:45:21 : completer : processing each isolated area (9)...
+08/05/17 18:45:21 : completer : isolated area N1
+08/05/17 18:45:21 : completer : isolated area N2
+08/05/17 18:45:21 : cg: (1024) ....... iter : 134, error : 9.95317E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N3
+08/05/17 18:45:21 : completer : isolated area N4
+08/05/17 18:45:21 : cg: (1024) ....... iter : 125, error : 9.27804E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N5
+08/05/17 18:45:21 : cg: (1024) ....... iter : 1, error : 1.66368E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N6
+08/05/17 18:45:21 : completer : isolated area N7
+08/05/17 18:45:21 : completer : isolated area N8
+08/05/17 18:45:21 : completer : isolated area N9
+08/05/17 18:45:21 : cg: (1024) ....... iter : 1, error : 5.36268E-006, 0 sec
+08/05/17 18:45:21 : completer : processing whole area
+08/05/17 18:45:21 : cg: (1024) ....... iter : 1, error : 1.34517E-006, 0 sec
+08/05/17 18:45:21 : 
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : points : (points1)
+08/05/17 18:45:21 : completer : processing...
+08/05/17 18:45:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:45:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:45:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:45:21 : solving near fault lines...
+08/05/17 18:45:21 : cg: (4096) ....... iter : 125, error :  9.8493E-006, 0 sec
+08/05/17 18:45:21 : completer : flood_areas_cnt = 8
+08/05/17 18:45:21 : completer : processing each isolated area (8)...
+08/05/17 18:45:21 : completer : isolated area N1
+08/05/17 18:45:21 : completer : isolated area N2
+08/05/17 18:45:21 : cg: (4096) ....... iter : 96, error : 9.19511E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N3
+08/05/17 18:45:21 : completer : isolated area N4
+08/05/17 18:45:21 : cg: (4096) ....... iter : 37, error : 9.94349E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N5
+08/05/17 18:45:21 : cg: (4096) ....... iter : 1, error : 5.76979E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N6
+08/05/17 18:45:21 : completer : isolated area N7
+08/05/17 18:45:21 : completer : isolated area N8
+08/05/17 18:45:21 : cg: (4096) ....... iter : 1, error : 2.56678E-006, 0 sec
+08/05/17 18:45:21 : completer : processing whole area
+08/05/17 18:45:21 : cg: (4096) ....... iter : 1, error : 1.51384E-006, 0 sec
+08/05/17 18:45:21 : Projecting surf "map_faults" (64 x 64) => (105 x 102)
+08/05/17 18:45:21 : 
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : * Phase 5, grid size = 105 x 102 (map_faults)
+08/05/17 18:45:21 : *************
+08/05/17 18:45:21 : points : (points1)
+08/05/17 18:45:21 : completer : processing...
+08/05/17 18:45:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:45:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:45:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:45:21 : solving near fault lines...
+08/05/17 18:45:21 : cg: (10710) ....... iter : 101, error :  8.7006E-006, 0 sec
+08/05/17 18:45:21 : completer : flood_areas_cnt = 17
+08/05/17 18:45:21 : completer : processing each isolated area (17)...
+08/05/17 18:45:21 : completer : isolated area N1
+08/05/17 18:45:21 : completer : isolated area N2
+08/05/17 18:45:21 : cg: (10710) ....... iter : 166, error : 9.89405E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N3
+08/05/17 18:45:21 : completer : isolated area N4
+08/05/17 18:45:21 : completer : isolated area N5
+08/05/17 18:45:21 : completer : isolated area N6
+08/05/17 18:45:21 : cg: (10710) ....... iter : 2, error : 9.70484E-006, 0 sec
+08/05/17 18:45:21 : completer : isolated area N7
+08/05/17 18:45:22 : completer : isolated area N8
+08/05/17 18:45:22 : completer : isolated area N9
+08/05/17 18:45:22 : completer : isolated area N10
+08/05/17 18:45:22 : completer : isolated area N11
+08/05/17 18:45:22 : completer : isolated area N12
+08/05/17 18:45:22 : completer : isolated area N13
+08/05/17 18:45:22 : completer : isolated area N14
+08/05/17 18:45:22 : completer : isolated area N15
+08/05/17 18:45:22 : completer : isolated area N16
+08/05/17 18:45:22 : completer : isolated area N17
+08/05/17 18:45:22 : cg: (10710) ....... iter : 1, error : 1.06691E-006, 0 sec
+08/05/17 18:45:22 : completer : processing whole area
+08/05/17 18:45:22 : cg: (10710) ....... iter : 1, error :  2.5788E-006, 0 sec
+08/05/17 18:45:22 : Elapsed time 0 minutes 1 seconds
+08/05/17 18:45:22 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid.grd (Surfer GRD-ASCII)
+08/05/17 18:45:22 : Removing surfit_grid from memory.
+08/05/17 18:45:22 : removing surface "map_faults" from memory
+08/05/17 18:45:22 : removing points "points1" from memory
+08/05/17 18:45:22 : removing curve "fault11" from memory
+08/05/17 18:45:22 : removing curve "fault10" from memory
+08/05/17 18:45:22 : removing curve "fault9" from memory
+08/05/17 18:45:22 : removing curve "fault8" from memory
+08/05/17 18:45:22 : removing curve "fault7" from memory
+08/05/17 18:45:22 : removing curve "fault6" from memory
+08/05/17 18:45:22 : removing curve "fault5" from memory
+08/05/17 18:45:22 : removing curve "fault4" from memory
+08/05/17 18:45:22 : removing curve "fault3" from memory
+08/05/17 18:45:22 : removing curve "fault2" from memory
+08/05/17 18:45:22 : removing curve "fault1" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 18:47:40 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 18:47:40 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault2" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault3" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault4" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault5" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault6" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault7" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault8" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault9" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault10" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : loading curve "fault11" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:47:40 : grid: (592103 <-> 597280) / 50; (5.72323e+006 <-> 5.7283e+006) / 50. 105x102
+08/05/17 18:47:40 : creating gridding rule points("points1")
+08/05/17 18:47:40 : creating gridding rule completer(0.5,2,0,1)
+08/05/17 18:47:40 : 
+08/05/17 18:47:40 : 
+08/05/17 18:47:40 : 
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : points : (points1)
+08/05/17 18:47:40 : completer : processing...
+08/05/17 18:47:40 : completer : processing whole area
+08/05/17 18:47:40 : cg: (64) ....... iter : 41, error : 2.67342E-006, 0 sec
+08/05/17 18:47:40 : 
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : points : (points1)
+08/05/17 18:47:40 : completer : processing...
+08/05/17 18:47:40 : completer : processing whole area
+08/05/17 18:47:40 : cg: (256) ....... iter : 84, error : 8.53433E-006, 0 sec
+08/05/17 18:47:40 : 
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : points : (points1)
+08/05/17 18:47:40 : completer : processing...
+08/05/17 18:47:40 : completer : processing whole area
+08/05/17 18:47:40 : cg: (1024) ....... iter : 168, error : 9.78445E-006, 0 sec
+08/05/17 18:47:40 : 
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : points : (points1)
+08/05/17 18:47:40 : completer : processing...
+08/05/17 18:47:40 : completer : processing whole area
+08/05/17 18:47:40 : cg: (4096) ....... iter : 121, error : 9.69573E-006, 0 sec
+08/05/17 18:47:40 : Projecting surf "map_faults" (64 x 64) => (105 x 102)
+08/05/17 18:47:40 : 
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : * Phase 5, grid size = 105 x 102 (map_faults)
+08/05/17 18:47:40 : *************
+08/05/17 18:47:40 : points : (points1)
+08/05/17 18:47:40 : completer : processing...
+08/05/17 18:47:40 : completer : processing whole area
+08/05/17 18:47:40 : cg: (10710) ....... iter : 54, error :  9.7099E-006, 0 sec
+08/05/17 18:47:40 : Elapsed time 0 minutes 0 seconds
+08/05/17 18:47:40 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid.grd (Surfer GRD-ASCII)
+08/05/17 18:47:41 : Removing surfit_grid from memory.
+08/05/17 18:47:41 : removing surface "map_faults" from memory
+08/05/17 18:47:41 : removing points "points1" from memory
+08/05/17 18:47:41 : removing curve "fault11" from memory
+08/05/17 18:47:41 : removing curve "fault10" from memory
+08/05/17 18:47:41 : removing curve "fault9" from memory
+08/05/17 18:47:41 : removing curve "fault8" from memory
+08/05/17 18:47:41 : removing curve "fault7" from memory
+08/05/17 18:47:41 : removing curve "fault6" from memory
+08/05/17 18:47:41 : removing curve "fault5" from memory
+08/05/17 18:47:41 : removing curve "fault4" from memory
+08/05/17 18:47:41 : removing curve "fault3" from memory
+08/05/17 18:47:41 : removing curve "fault2" from memory
+08/05/17 18:47:41 : removing curve "fault1" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 18:48:20 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 18:48:20 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault2" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault3" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault4" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault5" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault6" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault7" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault8" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault9" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault10" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : loading curve "fault11" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:48:20 : grid: (592103 <-> 597280) / 50; (5.72323e+006 <-> 5.7283e+006) / 50. 105x102
+08/05/17 18:48:20 : creating gridding rule points("points1")
+08/05/17 18:48:20 : creating gridding rule fault("fault1")
+08/05/17 18:48:20 : creating gridding rule fault("fault2")
+08/05/17 18:48:20 : creating gridding rule fault("fault3")
+08/05/17 18:48:20 : creating gridding rule fault("fault4")
+08/05/17 18:48:20 : creating gridding rule fault("fault5")
+08/05/17 18:48:20 : creating gridding rule fault("fault6")
+08/05/17 18:48:20 : creating gridding rule fault("fault7")
+08/05/17 18:48:20 : creating gridding rule fault("fault8")
+08/05/17 18:48:20 : creating gridding rule fault("fault9")
+08/05/17 18:48:20 : creating gridding rule fault("fault10")
+08/05/17 18:48:20 : creating gridding rule fault("fault11")
+08/05/17 18:48:20 : creating gridding rule completer(0.5,20,0,1)
+08/05/17 18:48:20 : 
+08/05/17 18:48:20 : 
+08/05/17 18:48:20 : 
+08/05/17 18:48:20 : *************
+08/05/17 18:48:20 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 18:48:20 : *************
+08/05/17 18:48:20 : points : (points1)
+08/05/17 18:48:20 : completer : processing...
+08/05/17 18:48:20 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:48:20 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:48:20 :                   "fault9", "fault10", "fault11"
+08/05/17 18:48:20 : solving near fault lines...
+08/05/17 18:48:20 : cg: (64) ....... iter : 47, error : 1.68748E-006, 0 sec
+08/05/17 18:48:20 : completer : flood_areas_cnt = 7
+08/05/17 18:48:20 : completer : processing each isolated area (7)...
+08/05/17 18:48:20 : completer : isolated area N1
+08/05/17 18:48:20 : completer : isolated area N2
+08/05/17 18:48:20 : cg: (64)  - nothing to do.
+08/05/17 18:48:20 : completer : isolated area N3
+08/05/17 18:48:20 : completer : isolated area N4
+08/05/17 18:48:20 : cg: (64)  - nothing to do.
+08/05/17 18:48:20 : completer : isolated area N5
+08/05/17 18:48:20 : cg: (64)  - nothing to do.
+08/05/17 18:48:20 : completer : isolated area N6
+08/05/17 18:48:20 : cg: (64)  - nothing to do.
+08/05/17 18:48:20 : completer : isolated area N7
+08/05/17 18:48:20 : completer : processing whole area
+08/05/17 18:48:20 : cg: (64)  - nothing to do.
+08/05/17 18:48:20 : 
+08/05/17 18:48:20 : *************
+08/05/17 18:48:20 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 18:48:20 : *************
+08/05/17 18:48:20 : points : (points1)
+08/05/17 18:48:20 : completer : processing...
+08/05/17 18:48:20 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:48:20 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:48:20 :                   "fault9", "fault10", "fault11"
+08/05/17 18:48:20 : solving near fault lines...
+08/05/17 18:48:20 : cg: (256) ....... iter : 164, error : 8.01892E-006, 0 sec
+08/05/17 18:48:20 : completer : flood_areas_cnt = 6
+08/05/17 18:48:20 : completer : processing each isolated area (6)...
+08/05/17 18:48:20 : completer : isolated area N1
+08/05/17 18:48:20 : completer : isolated area N2
+08/05/17 18:48:20 : cg: (256) ....... iter : 117, error : 6.33794E-006, 0 sec
+08/05/17 18:48:20 : completer : isolated area N3
+08/05/17 18:48:20 : cg: (256) ....... iter : 86, error : 1.84457E-006, 0 sec
+08/05/17 18:48:20 : completer : isolated area N4
+08/05/17 18:48:20 : cg: (256)  - nothing to do.
+08/05/17 18:48:20 : completer : isolated area N5
+08/05/17 18:48:20 : completer : isolated area N6
+08/05/17 18:48:20 : cg: (256)  - nothing to do.
+08/05/17 18:48:20 : completer : processing whole area
+08/05/17 18:48:20 : cg: (256) ....... iter : 1, error : 1.70017E-006, 0 sec
+08/05/17 18:48:20 : 
+08/05/17 18:48:20 : *************
+08/05/17 18:48:20 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 18:48:20 : *************
+08/05/17 18:48:20 : points : (points1)
+08/05/17 18:48:20 : completer : processing...
+08/05/17 18:48:20 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:48:20 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:48:20 :                   "fault9", "fault10", "fault11"
+08/05/17 18:48:20 : solving near fault lines...
+08/05/17 18:48:20 : cg: (1024) ....... iter : 272, error : 9.27137E-006, 0 sec
+08/05/17 18:48:20 : completer : flood_areas_cnt = 9
+08/05/17 18:48:20 : completer : processing each isolated area (9)...
+08/05/17 18:48:20 : completer : isolated area N1
+08/05/17 18:48:20 : completer : isolated area N2
+08/05/17 18:48:20 : cg: (1024) ....... iter : 238, error : 8.45431E-006, 0 sec
+08/05/17 18:48:20 : completer : isolated area N3
+08/05/17 18:48:20 : completer : isolated area N4
+08/05/17 18:48:20 : cg: (1024) ....... iter : 211, error : 9.31716E-006, 0 sec
+08/05/17 18:48:20 : completer : isolated area N5
+08/05/17 18:48:20 : cg: (1024) ....... iter : 1, error : 1.02933E-006, 0 sec
+08/05/17 18:48:20 : completer : isolated area N6
+08/05/17 18:48:20 : completer : isolated area N7
+08/05/17 18:48:20 : completer : isolated area N8
+08/05/17 18:48:20 : completer : isolated area N9
+08/05/17 18:48:20 : cg: (1024) ....... iter : 1, error : 7.89102E-007, 0 sec
+08/05/17 18:48:20 : completer : processing whole area
+08/05/17 18:48:20 : cg: (1024) ....... iter : 1, error : 1.18559E-006, 0 sec
+08/05/17 18:48:20 : 
+08/05/17 18:48:20 : *************
+08/05/17 18:48:20 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 18:48:20 : *************
+08/05/17 18:48:20 : points : (points1)
+08/05/17 18:48:20 : completer : processing...
+08/05/17 18:48:20 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:48:20 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:48:20 :                   "fault9", "fault10", "fault11"
+08/05/17 18:48:20 : solving near fault lines...
+08/05/17 18:48:20 : cg: (4096) ....... iter : 157, error : 8.06496E-006, 0 sec
+08/05/17 18:48:20 : completer : flood_areas_cnt = 8
+08/05/17 18:48:20 : completer : processing each isolated area (8)...
+08/05/17 18:48:20 : completer : isolated area N1
+08/05/17 18:48:20 : completer : isolated area N2
+08/05/17 18:48:20 : cg: (4096) ....... iter : 193, error : 9.72815E-006, 1 sec
+08/05/17 18:48:21 : completer : isolated area N3
+08/05/17 18:48:21 : completer : isolated area N4
+08/05/17 18:48:21 : cg: (4096) ....... iter : 32, error : 8.55326E-006, 0 sec
+08/05/17 18:48:21 : completer : isolated area N5
+08/05/17 18:48:21 : cg: (4096) ....... iter : 4, error : 8.39156E-006, 0 sec
+08/05/17 18:48:21 : completer : isolated area N6
+08/05/17 18:48:21 : completer : isolated area N7
+08/05/17 18:48:21 : completer : isolated area N8
+08/05/17 18:48:21 : cg: (4096) ....... iter : 1, error : 5.29939E-006, 0 sec
+08/05/17 18:48:21 : completer : processing whole area
+08/05/17 18:48:21 : cg: (4096) ....... iter : 1, error : 3.07047E-006, 0 sec
+08/05/17 18:48:21 : Projecting surf "map_faults" (64 x 64) => (105 x 102)
+08/05/17 18:48:21 : 
+08/05/17 18:48:21 : *************
+08/05/17 18:48:21 : * Phase 5, grid size = 105 x 102 (map_faults)
+08/05/17 18:48:21 : *************
+08/05/17 18:48:21 : points : (points1)
+08/05/17 18:48:21 : completer : processing...
+08/05/17 18:48:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:48:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:48:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:48:21 : solving near fault lines...
+08/05/17 18:48:21 : cg: (10710) ....... iter : 105, error : 9.92545E-006, 0 sec
+08/05/17 18:48:21 : completer : flood_areas_cnt = 17
+08/05/17 18:48:21 : completer : processing each isolated area (17)...
+08/05/17 18:48:21 : completer : isolated area N1
+08/05/17 18:48:21 : completer : isolated area N2
+08/05/17 18:48:21 : cg: (10710) ....... iter : 205, error : 9.98163E-006, 0 sec
+08/05/17 18:48:21 : completer : isolated area N3
+08/05/17 18:48:21 : completer : isolated area N4
+08/05/17 18:48:21 : completer : isolated area N5
+08/05/17 18:48:21 : completer : isolated area N6
+08/05/17 18:48:21 : cg: (10710) ....... iter : 2, error :  7.5434E-006, 0 sec
+08/05/17 18:48:21 : completer : isolated area N7
+08/05/17 18:48:21 : completer : isolated area N8
+08/05/17 18:48:21 : completer : isolated area N9
+08/05/17 18:48:21 : completer : isolated area N10
+08/05/17 18:48:21 : completer : isolated area N11
+08/05/17 18:48:21 : completer : isolated area N12
+08/05/17 18:48:21 : completer : isolated area N13
+08/05/17 18:48:21 : completer : isolated area N14
+08/05/17 18:48:21 : completer : isolated area N15
+08/05/17 18:48:21 : completer : isolated area N16
+08/05/17 18:48:21 : completer : isolated area N17
+08/05/17 18:48:21 : cg: (10710) ....... iter : 1, error : 5.54057E-006, 0 sec
+08/05/17 18:48:21 : completer : processing whole area
+08/05/17 18:48:21 : cg: (10710) ....... iter : 1, error : 3.11012E-006, 0 sec
+08/05/17 18:48:21 : Elapsed time 0 minutes 1 seconds
+08/05/17 18:48:21 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid.grd (Surfer GRD-ASCII)
+08/05/17 18:48:21 : Removing surfit_grid from memory.
+08/05/17 18:48:21 : removing surface "map_faults" from memory
+08/05/17 18:48:21 : removing points "points1" from memory
+08/05/17 18:48:21 : removing curve "fault11" from memory
+08/05/17 18:48:21 : removing curve "fault10" from memory
+08/05/17 18:48:21 : removing curve "fault9" from memory
+08/05/17 18:48:21 : removing curve "fault8" from memory
+08/05/17 18:48:21 : removing curve "fault7" from memory
+08/05/17 18:48:21 : removing curve "fault6" from memory
+08/05/17 18:48:21 : removing curve "fault5" from memory
+08/05/17 18:48:21 : removing curve "fault4" from memory
+08/05/17 18:48:21 : removing curve "fault3" from memory
+08/05/17 18:48:21 : removing curve "fault2" from memory
+08/05/17 18:48:21 : removing curve "fault1" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 18:49:20 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 18:49:20 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault2" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault3" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault4" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault5" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault6" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault7" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault8" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault9" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault10" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : loading curve "fault11" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:20 : grid: (592103 <-> 597280) / 50; (5.72323e+006 <-> 5.7283e+006) / 50. 105x102
+08/05/17 18:49:20 : creating gridding rule points("points1")
+08/05/17 18:49:20 : creating gridding rule fault("fault1")
+08/05/17 18:49:20 : creating gridding rule fault("fault2")
+08/05/17 18:49:20 : creating gridding rule fault("fault3")
+08/05/17 18:49:20 : creating gridding rule fault("fault4")
+08/05/17 18:49:20 : creating gridding rule fault("fault5")
+08/05/17 18:49:20 : creating gridding rule fault("fault6")
+08/05/17 18:49:20 : creating gridding rule fault("fault7")
+08/05/17 18:49:20 : creating gridding rule fault("fault8")
+08/05/17 18:49:20 : creating gridding rule fault("fault9")
+08/05/17 18:49:20 : creating gridding rule fault("fault10")
+08/05/17 18:49:20 : creating gridding rule fault("fault11")
+08/05/17 18:49:20 : creating gridding rule completer(0.5,50,0,1)
+08/05/17 18:49:20 : 
+08/05/17 18:49:20 : 
+08/05/17 18:49:20 : 
+08/05/17 18:49:20 : *************
+08/05/17 18:49:20 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 18:49:20 : *************
+08/05/17 18:49:20 : points : (points1)
+08/05/17 18:49:20 : completer : processing...
+08/05/17 18:49:20 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:49:20 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:49:20 :                   "fault9", "fault10", "fault11"
+08/05/17 18:49:20 : solving near fault lines...
+08/05/17 18:49:20 : cg: (64) ....... iter : 47, error : 7.64037E-006, 0 sec
+08/05/17 18:49:20 : completer : flood_areas_cnt = 7
+08/05/17 18:49:20 : completer : processing each isolated area (7)...
+08/05/17 18:49:20 : completer : isolated area N1
+08/05/17 18:49:20 : completer : isolated area N2
+08/05/17 18:49:20 : cg: (64)  - nothing to do.
+08/05/17 18:49:20 : completer : isolated area N3
+08/05/17 18:49:20 : completer : isolated area N4
+08/05/17 18:49:20 : cg: (64)  - nothing to do.
+08/05/17 18:49:20 : completer : isolated area N5
+08/05/17 18:49:20 : cg: (64)  - nothing to do.
+08/05/17 18:49:20 : completer : isolated area N6
+08/05/17 18:49:20 : cg: (64)  - nothing to do.
+08/05/17 18:49:20 : completer : isolated area N7
+08/05/17 18:49:20 : completer : processing whole area
+08/05/17 18:49:20 : cg: (64)  - nothing to do.
+08/05/17 18:49:20 : 
+08/05/17 18:49:20 : *************
+08/05/17 18:49:20 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 18:49:20 : *************
+08/05/17 18:49:20 : points : (points1)
+08/05/17 18:49:20 : completer : processing...
+08/05/17 18:49:20 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:49:20 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:49:20 :                   "fault9", "fault10", "fault11"
+08/05/17 18:49:20 : solving near fault lines...
+08/05/17 18:49:20 : cg: (256) ....... iter : 201, error : 7.76819E-006, 0 sec
+08/05/17 18:49:20 : completer : flood_areas_cnt = 6
+08/05/17 18:49:20 : completer : processing each isolated area (6)...
+08/05/17 18:49:20 : completer : isolated area N1
+08/05/17 18:49:20 : completer : isolated area N2
+08/05/17 18:49:20 : cg: (256) ....... iter : 149, error : 2.95679E-006, 0 sec
+08/05/17 18:49:20 : completer : isolated area N3
+08/05/17 18:49:20 : cg: (256) ....... iter : 89, error : 4.54527E-006, 1 sec
+08/05/17 18:49:21 : completer : isolated area N4
+08/05/17 18:49:21 : cg: (256) ....... iter : 11, error : 3.58915E-006, 0 sec
+08/05/17 18:49:21 : completer : isolated area N5
+08/05/17 18:49:21 : completer : isolated area N6
+08/05/17 18:49:21 : cg: (256)  - nothing to do.
+08/05/17 18:49:21 : completer : processing whole area
+08/05/17 18:49:21 : cg: (256) ....... iter : 1, error : 1.38133E-006, 0 sec
+08/05/17 18:49:21 : 
+08/05/17 18:49:21 : *************
+08/05/17 18:49:21 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 18:49:21 : *************
+08/05/17 18:49:21 : points : (points1)
+08/05/17 18:49:21 : completer : processing...
+08/05/17 18:49:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:49:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:49:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:49:21 : solving near fault lines...
+08/05/17 18:49:21 : cg: (1024) ....... iter : 292, error : 9.51849E-006, 0 sec
+08/05/17 18:49:21 : completer : flood_areas_cnt = 9
+08/05/17 18:49:21 : completer : processing each isolated area (9)...
+08/05/17 18:49:21 : completer : isolated area N1
+08/05/17 18:49:21 : completer : isolated area N2
+08/05/17 18:49:21 : cg: (1024) ....... iter : 298, error : 9.60986E-006, 0 sec
+08/05/17 18:49:21 : completer : isolated area N3
+08/05/17 18:49:21 : completer : isolated area N4
+08/05/17 18:49:21 : cg: (1024) ....... iter : 90, error : 9.50691E-006, 0 sec
+08/05/17 18:49:21 : completer : isolated area N5
+08/05/17 18:49:21 : cg: (1024) ....... iter : 1, error : 4.88874E-007, 0 sec
+08/05/17 18:49:21 : completer : isolated area N6
+08/05/17 18:49:21 : completer : isolated area N7
+08/05/17 18:49:21 : completer : isolated area N8
+08/05/17 18:49:21 : completer : isolated area N9
+08/05/17 18:49:21 : cg: (1024) ....... iter : 1, error : 5.61341E-007, 0 sec
+08/05/17 18:49:21 : completer : processing whole area
+08/05/17 18:49:21 : cg: (1024) ....... iter : 1, error : 1.13832E-006, 0 sec
+08/05/17 18:49:21 : 
+08/05/17 18:49:21 : *************
+08/05/17 18:49:21 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 18:49:21 : *************
+08/05/17 18:49:21 : points : (points1)
+08/05/17 18:49:21 : completer : processing...
+08/05/17 18:49:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:49:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:49:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:49:21 : solving near fault lines...
+08/05/17 18:49:21 : cg: (4096) ....... iter : 128, error : 9.72074E-006, 0 sec
+08/05/17 18:49:21 : completer : flood_areas_cnt = 8
+08/05/17 18:49:21 : completer : processing each isolated area (8)...
+08/05/17 18:49:21 : completer : isolated area N1
+08/05/17 18:49:21 : completer : isolated area N2
+08/05/17 18:49:21 : cg: (4096) ....... iter : 208, error : 9.37975E-006, 0 sec
+08/05/17 18:49:21 : completer : isolated area N3
+08/05/17 18:49:21 : completer : isolated area N4
+08/05/17 18:49:21 : cg: (4096) ....... iter : 39, error : 9.47859E-006, 0 sec
+08/05/17 18:49:21 : completer : isolated area N5
+08/05/17 18:49:21 : cg: (4096) ....... iter : 10, error : 7.29246E-006, 0 sec
+08/05/17 18:49:21 : completer : isolated area N6
+08/05/17 18:49:21 : completer : isolated area N7
+08/05/17 18:49:21 : completer : isolated area N8
+08/05/17 18:49:21 : cg: (4096) ....... iter : 1, error : 7.49606E-006, 0 sec
+08/05/17 18:49:21 : completer : processing whole area
+08/05/17 18:49:21 : cg: (4096) ....... iter : 1, error : 1.79037E-006, 0 sec
+08/05/17 18:49:21 : Projecting surf "map_faults" (64 x 64) => (105 x 102)
+08/05/17 18:49:21 : 
+08/05/17 18:49:21 : *************
+08/05/17 18:49:21 : * Phase 5, grid size = 105 x 102 (map_faults)
+08/05/17 18:49:21 : *************
+08/05/17 18:49:21 : points : (points1)
+08/05/17 18:49:21 : completer : processing...
+08/05/17 18:49:21 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:49:21 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:49:21 :                   "fault9", "fault10", "fault11"
+08/05/17 18:49:21 : solving near fault lines...
+08/05/17 18:49:21 : cg: (10710) ....... iter : 107, error : 8.15724E-006, 0 sec
+08/05/17 18:49:21 : completer : flood_areas_cnt = 17
+08/05/17 18:49:21 : completer : processing each isolated area (17)...
+08/05/17 18:49:21 : completer : isolated area N1
+08/05/17 18:49:21 : completer : isolated area N2
+08/05/17 18:49:21 : cg: (10710) ....... iter : 220, error : 9.74188E-006, 0 sec
+08/05/17 18:49:21 : completer : isolated area N3
+08/05/17 18:49:21 : completer : isolated area N4
+08/05/17 18:49:21 : completer : isolated area N5
+08/05/17 18:49:21 : completer : isolated area N6
+08/05/17 18:49:21 : cg: (10710) ....... iter : 3, error : 7.94483E-006, 0 sec
+08/05/17 18:49:21 : completer : isolated area N7
+08/05/17 18:49:21 : completer : isolated area N8
+08/05/17 18:49:21 : completer : isolated area N9
+08/05/17 18:49:21 : completer : isolated area N10
+08/05/17 18:49:21 : completer : isolated area N11
+08/05/17 18:49:21 : completer : isolated area N12
+08/05/17 18:49:21 : completer : isolated area N13
+08/05/17 18:49:21 : completer : isolated area N14
+08/05/17 18:49:21 : completer : isolated area N15
+08/05/17 18:49:21 : completer : isolated area N16
+08/05/17 18:49:21 : completer : isolated area N17
+08/05/17 18:49:21 : cg: (10710) ....... iter : 1, error : 4.55028E-006, 0 sec
+08/05/17 18:49:21 : completer : processing whole area
+08/05/17 18:49:21 : cg: (10710) ....... iter : 1, error : 4.77031E-006, 0 sec
+08/05/17 18:49:21 : Elapsed time 0 minutes 1 seconds
+08/05/17 18:49:21 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid.grd (Surfer GRD-ASCII)
+08/05/17 18:49:21 : Removing surfit_grid from memory.
+08/05/17 18:49:21 : removing surface "map_faults" from memory
+08/05/17 18:49:21 : removing points "points1" from memory
+08/05/17 18:49:21 : removing curve "fault11" from memory
+08/05/17 18:49:21 : removing curve "fault10" from memory
+08/05/17 18:49:21 : removing curve "fault9" from memory
+08/05/17 18:49:21 : removing curve "fault8" from memory
+08/05/17 18:49:21 : removing curve "fault7" from memory
+08/05/17 18:49:21 : removing curve "fault6" from memory
+08/05/17 18:49:21 : removing curve "fault5" from memory
+08/05/17 18:49:21 : removing curve "fault4" from memory
+08/05/17 18:49:21 : removing curve "fault3" from memory
+08/05/17 18:49:21 : removing curve "fault2" from memory
+08/05/17 18:49:21 : removing curve "fault1" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 18:49:57 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 18:49:57 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault2" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault3" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault4" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault5" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault6" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault7" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault8" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault9" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault10" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : loading curve "fault11" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:49:57 : grid: (592103 <-> 597280) / 50; (5.72323e+006 <-> 5.7283e+006) / 50. 105x102
+08/05/17 18:49:57 : creating gridding rule points("points1")
+08/05/17 18:49:57 : creating gridding rule fault("fault1")
+08/05/17 18:49:57 : creating gridding rule fault("fault2")
+08/05/17 18:49:57 : creating gridding rule fault("fault3")
+08/05/17 18:49:57 : creating gridding rule fault("fault4")
+08/05/17 18:49:57 : creating gridding rule fault("fault5")
+08/05/17 18:49:57 : creating gridding rule fault("fault6")
+08/05/17 18:49:57 : creating gridding rule fault("fault7")
+08/05/17 18:49:57 : creating gridding rule fault("fault8")
+08/05/17 18:49:57 : creating gridding rule fault("fault9")
+08/05/17 18:49:57 : creating gridding rule fault("fault10")
+08/05/17 18:49:57 : creating gridding rule fault("fault11")
+08/05/17 18:49:57 : 
+08/05/17 18:49:57 : 
+08/05/17 18:49:57 : 
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : points : (points1)
+08/05/17 18:49:57 : 
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : points : (points1)
+08/05/17 18:49:57 : 
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : points : (points1)
+08/05/17 18:49:57 : 
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : points : (points1)
+08/05/17 18:49:57 : Projecting surf "map_faults" (64 x 64) => (105 x 102)
+08/05/17 18:49:57 : 
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : * Phase 5, grid size = 105 x 102 (map_faults)
+08/05/17 18:49:57 : *************
+08/05/17 18:49:57 : points : (points1)
+08/05/17 18:49:57 : Elapsed time 0 minutes 0 seconds
+08/05/17 18:49:57 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid.grd (Surfer GRD-ASCII)
+08/05/17 18:49:57 : Removing surfit_grid from memory.
+08/05/17 18:49:57 : removing surface "map_faults" from memory
+08/05/17 18:49:57 : removing points "points1" from memory
+08/05/17 18:49:57 : removing curve "fault11" from memory
+08/05/17 18:49:57 : removing curve "fault10" from memory
+08/05/17 18:49:57 : removing curve "fault9" from memory
+08/05/17 18:49:57 : removing curve "fault8" from memory
+08/05/17 18:49:57 : removing curve "fault7" from memory
+08/05/17 18:49:57 : removing curve "fault6" from memory
+08/05/17 18:49:57 : removing curve "fault5" from memory
+08/05/17 18:49:57 : removing curve "fault4" from memory
+08/05/17 18:49:57 : removing curve "fault3" from memory
+08/05/17 18:49:57 : removing curve "fault2" from memory
+08/05/17 18:49:57 : removing curve "fault1" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 18:50:27 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 18:50:27 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault2" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault3" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault4" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault5" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault6" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault7" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault8" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault9" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault10" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : loading curve "fault11" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:50:27 : grid: (592103 <-> 597280) / 10; (5.72323e+006 <-> 5.7283e+006) / 10. 519x508
+08/05/17 18:50:27 : creating gridding rule points("points1")
+08/05/17 18:50:27 : creating gridding rule fault("fault1")
+08/05/17 18:50:27 : creating gridding rule fault("fault2")
+08/05/17 18:50:27 : creating gridding rule fault("fault3")
+08/05/17 18:50:27 : creating gridding rule fault("fault4")
+08/05/17 18:50:27 : creating gridding rule fault("fault5")
+08/05/17 18:50:27 : creating gridding rule fault("fault6")
+08/05/17 18:50:27 : creating gridding rule fault("fault7")
+08/05/17 18:50:27 : creating gridding rule fault("fault8")
+08/05/17 18:50:27 : creating gridding rule fault("fault9")
+08/05/17 18:50:27 : creating gridding rule fault("fault10")
+08/05/17 18:50:27 : creating gridding rule fault("fault11")
+08/05/17 18:50:27 : creating gridding rule completer(0.5,10,0,1)
+08/05/17 18:50:27 : 
+08/05/17 18:50:27 : 
+08/05/17 18:50:27 : 
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : points : (points1)
+08/05/17 18:50:27 : completer : processing...
+08/05/17 18:50:27 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:50:27 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:50:27 :                   "fault9", "fault10", "fault11"
+08/05/17 18:50:27 : solving near fault lines...
+08/05/17 18:50:27 : cg: (64) ....... iter : 47, error :  2.5855E-007, 0 sec
+08/05/17 18:50:27 : completer : flood_areas_cnt = 7
+08/05/17 18:50:27 : completer : processing each isolated area (7)...
+08/05/17 18:50:27 : completer : isolated area N1
+08/05/17 18:50:27 : completer : isolated area N2
+08/05/17 18:50:27 : cg: (64)  - nothing to do.
+08/05/17 18:50:27 : completer : isolated area N3
+08/05/17 18:50:27 : completer : isolated area N4
+08/05/17 18:50:27 : cg: (64)  - nothing to do.
+08/05/17 18:50:27 : completer : isolated area N5
+08/05/17 18:50:27 : cg: (64)  - nothing to do.
+08/05/17 18:50:27 : completer : isolated area N6
+08/05/17 18:50:27 : cg: (64)  - nothing to do.
+08/05/17 18:50:27 : completer : isolated area N7
+08/05/17 18:50:27 : completer : processing whole area
+08/05/17 18:50:27 : cg: (64)  - nothing to do.
+08/05/17 18:50:27 : 
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : points : (points1)
+08/05/17 18:50:27 : completer : processing...
+08/05/17 18:50:27 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:50:27 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:50:27 :                   "fault9", "fault10", "fault11"
+08/05/17 18:50:27 : solving near fault lines...
+08/05/17 18:50:27 : cg: (256) ....... iter : 157, error : 6.54121E-006, 0 sec
+08/05/17 18:50:27 : completer : flood_areas_cnt = 6
+08/05/17 18:50:27 : completer : processing each isolated area (6)...
+08/05/17 18:50:27 : completer : isolated area N1
+08/05/17 18:50:27 : completer : isolated area N2
+08/05/17 18:50:27 : cg: (256) ....... iter : 109, error : 7.42576E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N3
+08/05/17 18:50:27 : completer : isolated area N4
+08/05/17 18:50:27 : cg: (256) ....... iter : 5, error : 2.43176E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N5
+08/05/17 18:50:27 : cg: (256) ....... iter : 77, error :  8.6363E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N6
+08/05/17 18:50:27 : cg: (256)  - nothing to do.
+08/05/17 18:50:27 : completer : processing whole area
+08/05/17 18:50:27 : cg: (256) ....... iter : 1, error :  2.7631E-006, 0 sec
+08/05/17 18:50:27 : 
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : points : (points1)
+08/05/17 18:50:27 : completer : processing...
+08/05/17 18:50:27 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:50:27 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:50:27 :                   "fault9", "fault10", "fault11"
+08/05/17 18:50:27 : solving near fault lines...
+08/05/17 18:50:27 : cg: (1024) ....... iter : 242, error : 7.15544E-006, 0 sec
+08/05/17 18:50:27 : completer : flood_areas_cnt = 8
+08/05/17 18:50:27 : completer : processing each isolated area (8)...
+08/05/17 18:50:27 : completer : isolated area N1
+08/05/17 18:50:27 : completer : isolated area N2
+08/05/17 18:50:27 : cg: (1024) ....... iter : 215, error : 9.73898E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N3
+08/05/17 18:50:27 : completer : isolated area N4
+08/05/17 18:50:27 : cg: (1024) ....... iter : 156, error : 8.80094E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N5
+08/05/17 18:50:27 : cg: (1024) ....... iter : 1, error : 8.23674E-007, 0 sec
+08/05/17 18:50:27 : completer : isolated area N6
+08/05/17 18:50:27 : completer : isolated area N7
+08/05/17 18:50:27 : completer : isolated area N8
+08/05/17 18:50:27 : cg: (1024) ....... iter : 1, error : 9.26382E-007, 0 sec
+08/05/17 18:50:27 : completer : processing whole area
+08/05/17 18:50:27 : cg: (1024) ....... iter : 1, error : 1.17961E-006, 0 sec
+08/05/17 18:50:27 : 
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : points : (points1)
+08/05/17 18:50:27 : completer : processing...
+08/05/17 18:50:27 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:50:27 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:50:27 :                   "fault9", "fault10", "fault11"
+08/05/17 18:50:27 : solving near fault lines...
+08/05/17 18:50:27 : cg: (4096) ....... iter : 192, error : 9.45016E-006, 0 sec
+08/05/17 18:50:27 : completer : flood_areas_cnt = 14
+08/05/17 18:50:27 : completer : processing each isolated area (14)...
+08/05/17 18:50:27 : completer : isolated area N1
+08/05/17 18:50:27 : completer : isolated area N2
+08/05/17 18:50:27 : completer : isolated area N3
+08/05/17 18:50:27 : cg: (4096) ....... iter : 143, error :  9.5481E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N4
+08/05/17 18:50:27 : completer : isolated area N5
+08/05/17 18:50:27 : completer : isolated area N6
+08/05/17 18:50:27 : completer : isolated area N7
+08/05/17 18:50:27 : cg: (4096) ....... iter : 35, error : 9.91548E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N8
+08/05/17 18:50:27 : cg: (4096) ....... iter : 3, error :  7.0715E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N9
+08/05/17 18:50:27 : completer : isolated area N10
+08/05/17 18:50:27 : completer : isolated area N11
+08/05/17 18:50:27 : completer : isolated area N12
+08/05/17 18:50:27 : completer : isolated area N13
+08/05/17 18:50:27 : completer : isolated area N14
+08/05/17 18:50:27 : cg: (4096) ....... iter : 1, error : 2.54538E-006, 0 sec
+08/05/17 18:50:27 : completer : processing whole area
+08/05/17 18:50:27 : cg: (4096) ....... iter : 1, error : 3.04105E-006, 0 sec
+08/05/17 18:50:27 : 
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : * Phase 5, grid size = 128 x 128 (map_faults)
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : points : (points1)
+08/05/17 18:50:27 : completer : processing...
+08/05/17 18:50:27 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:50:27 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:50:27 :                   "fault9", "fault10", "fault11"
+08/05/17 18:50:27 : solving near fault lines...
+08/05/17 18:50:27 : cg: (16384) ....... iter : 162, error : 9.24668E-006, 0 sec
+08/05/17 18:50:27 : completer : flood_areas_cnt = 25
+08/05/17 18:50:27 : completer : processing each isolated area (25)...
+08/05/17 18:50:27 : completer : isolated area N1
+08/05/17 18:50:27 : completer : isolated area N2
+08/05/17 18:50:27 : cg: (16384) ....... iter : 14, error : 9.08638E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N3
+08/05/17 18:50:27 : completer : isolated area N4
+08/05/17 18:50:27 : completer : isolated area N5
+08/05/17 18:50:27 : completer : isolated area N6
+08/05/17 18:50:27 : completer : isolated area N7
+08/05/17 18:50:27 : completer : isolated area N8
+08/05/17 18:50:27 : completer : isolated area N9
+08/05/17 18:50:27 : completer : isolated area N10
+08/05/17 18:50:27 : cg: (16384) ....... iter : 4, error : 8.36193E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N11
+08/05/17 18:50:27 : cg: (16384) ....... iter : 2, error : 5.23323E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N12
+08/05/17 18:50:27 : completer : isolated area N13
+08/05/17 18:50:27 : completer : isolated area N14
+08/05/17 18:50:27 : completer : isolated area N15
+08/05/17 18:50:27 : completer : isolated area N16
+08/05/17 18:50:27 : completer : isolated area N17
+08/05/17 18:50:27 : completer : isolated area N18
+08/05/17 18:50:27 : completer : isolated area N19
+08/05/17 18:50:27 : completer : isolated area N20
+08/05/17 18:50:27 : completer : isolated area N21
+08/05/17 18:50:27 : completer : isolated area N22
+08/05/17 18:50:27 : completer : isolated area N23
+08/05/17 18:50:27 : completer : isolated area N24
+08/05/17 18:50:27 : cg: (16384) ....... iter : 1, error :  3.0835E-006, 0 sec
+08/05/17 18:50:27 : completer : isolated area N25
+08/05/17 18:50:27 : completer : processing whole area
+08/05/17 18:50:27 : cg: (16384) ....... iter : 1, error : 2.25998E-006, 0 sec
+08/05/17 18:50:27 : 
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : * Phase 6, grid size = 256 x 256 (map_faults)
+08/05/17 18:50:27 : *************
+08/05/17 18:50:27 : points : (points1)
+08/05/17 18:50:27 : completer : processing...
+08/05/17 18:50:27 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:50:27 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:50:27 :                   "fault9", "fault10", "fault11"
+08/05/17 18:50:27 : solving near fault lines...
+08/05/17 18:50:27 : cg: (65536) ....... iter : 68, error : 8.55096E-006, 1 sec
+08/05/17 18:50:28 : completer : flood_areas_cnt = 73
+08/05/17 18:50:28 : completer : processing each isolated area (73)...
+08/05/17 18:50:28 : completer : isolated area N1
+08/05/17 18:50:28 : completer : isolated area N2
+08/05/17 18:50:28 : completer : isolated area N3
+08/05/17 18:50:28 : cg: (65536) ....... iter : 63, error : 9.69832E-006, 0 sec
+08/05/17 18:50:28 : completer : isolated area N4
+08/05/17 18:50:28 : completer : isolated area N5
+08/05/17 18:50:28 : completer : isolated area N6
+08/05/17 18:50:28 : completer : isolated area N7
+08/05/17 18:50:28 : completer : isolated area N8
+08/05/17 18:50:28 : completer : isolated area N9
+08/05/17 18:50:28 : completer : isolated area N10
+08/05/17 18:50:28 : completer : isolated area N11
+08/05/17 18:50:28 : completer : isolated area N12
+08/05/17 18:50:28 : completer : isolated area N13
+08/05/17 18:50:28 : completer : isolated area N14
+08/05/17 18:50:28 : completer : isolated area N15
+08/05/17 18:50:28 : completer : isolated area N16
+08/05/17 18:50:28 : completer : isolated area N17
+08/05/17 18:50:28 : completer : isolated area N18
+08/05/17 18:50:28 : completer : isolated area N19
+08/05/17 18:50:28 : completer : isolated area N20
+08/05/17 18:50:28 : completer : isolated area N21
+08/05/17 18:50:28 : completer : isolated area N22
+08/05/17 18:50:28 : completer : isolated area N23
+08/05/17 18:50:28 : completer : isolated area N24
+08/05/17 18:50:28 : completer : isolated area N25
+08/05/17 18:50:28 : cg: (65536) ....... iter : 2, error : 3.72316E-006, 0 sec
+08/05/17 18:50:28 : completer : isolated area N26
+08/05/17 18:50:29 : completer : isolated area N27
+08/05/17 18:50:29 : completer : isolated area N28
+08/05/17 18:50:29 : completer : isolated area N29
+08/05/17 18:50:29 : completer : isolated area N30
+08/05/17 18:50:29 : completer : isolated area N31
+08/05/17 18:50:29 : completer : isolated area N32
+08/05/17 18:50:29 : completer : isolated area N33
+08/05/17 18:50:29 : completer : isolated area N34
+08/05/17 18:50:29 : completer : isolated area N35
+08/05/17 18:50:29 : completer : isolated area N36
+08/05/17 18:50:29 : completer : isolated area N37
+08/05/17 18:50:29 : completer : isolated area N38
+08/05/17 18:50:29 : completer : isolated area N39
+08/05/17 18:50:29 : completer : isolated area N40
+08/05/17 18:50:29 : completer : isolated area N41
+08/05/17 18:50:29 : completer : isolated area N42
+08/05/17 18:50:29 : completer : isolated area N43
+08/05/17 18:50:29 : completer : isolated area N44
+08/05/17 18:50:29 : completer : isolated area N45
+08/05/17 18:50:29 : completer : isolated area N46
+08/05/17 18:50:29 : completer : isolated area N47
+08/05/17 18:50:29 : completer : isolated area N48
+08/05/17 18:50:29 : completer : isolated area N49
+08/05/17 18:50:29 : completer : isolated area N50
+08/05/17 18:50:29 : completer : isolated area N51
+08/05/17 18:50:29 : completer : isolated area N52
+08/05/17 18:50:29 : completer : isolated area N53
+08/05/17 18:50:29 : completer : isolated area N54
+08/05/17 18:50:29 : completer : isolated area N55
+08/05/17 18:50:29 : completer : isolated area N56
+08/05/17 18:50:29 : completer : isolated area N57
+08/05/17 18:50:29 : completer : isolated area N58
+08/05/17 18:50:29 : completer : isolated area N59
+08/05/17 18:50:29 : completer : isolated area N60
+08/05/17 18:50:29 : completer : isolated area N61
+08/05/17 18:50:29 : completer : isolated area N62
+08/05/17 18:50:29 : completer : isolated area N63
+08/05/17 18:50:29 : completer : isolated area N64
+08/05/17 18:50:29 : completer : isolated area N65
+08/05/17 18:50:29 : completer : isolated area N66
+08/05/17 18:50:29 : completer : isolated area N67
+08/05/17 18:50:29 : completer : isolated area N68
+08/05/17 18:50:29 : completer : isolated area N69
+08/05/17 18:50:29 : completer : isolated area N70
+08/05/17 18:50:29 : cg: (65536) ....... iter : 1, error : 4.22926E-006, 0 sec
+08/05/17 18:50:29 : completer : isolated area N71
+08/05/17 18:50:29 : completer : isolated area N72
+08/05/17 18:50:29 : completer : isolated area N73
+08/05/17 18:50:29 : completer : processing whole area
+08/05/17 18:50:30 : cg: (65536) ....... iter : 1, error : 1.60613E-006, 0 sec
+08/05/17 18:50:30 : Projecting surf "map_faults" (256 x 256) => (512 x 508)
+08/05/17 18:50:30 : 
+08/05/17 18:50:30 : *************
+08/05/17 18:50:30 : * Phase 7, grid size = 512 x 508 (map_faults)
+08/05/17 18:50:30 : *************
+08/05/17 18:50:30 : points : (points1)
+08/05/17 18:50:30 : completer : processing...
+08/05/17 18:50:30 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:50:30 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:50:30 :                   "fault9", "fault10", "fault11"
+08/05/17 18:50:30 : solving near fault lines...
+08/05/17 18:50:30 : cg: (260096) ....... iter : 32, error : 8.79926E-006, 0 sec
+08/05/17 18:50:30 : completer : flood_areas_cnt = 188
+08/05/17 18:50:30 : completer : processing each isolated area (188)...
+08/05/17 18:50:30 : completer : isolated area N1
+08/05/17 18:50:30 : completer : isolated area N2
+08/05/17 18:50:30 : completer : isolated area N3
+08/05/17 18:50:31 : cg: (260096) ....... iter : 1, error : 4.83726E-006, 0 sec
+08/05/17 18:50:31 : completer : isolated area N4
+08/05/17 18:50:31 : completer : isolated area N5
+08/05/17 18:50:31 : completer : isolated area N6
+08/05/17 18:50:31 : completer : isolated area N7
+08/05/17 18:50:31 : completer : isolated area N8
+08/05/17 18:50:31 : completer : isolated area N9
+08/05/17 18:50:31 : completer : isolated area N10
+08/05/17 18:50:31 : completer : isolated area N11
+08/05/17 18:50:31 : completer : isolated area N12
+08/05/17 18:50:31 : completer : isolated area N13
+08/05/17 18:50:31 : completer : isolated area N14
+08/05/17 18:50:31 : completer : isolated area N15
+08/05/17 18:50:32 : completer : isolated area N16
+08/05/17 18:50:32 : completer : isolated area N17
+08/05/17 18:50:32 : completer : isolated area N18
+08/05/17 18:50:32 : completer : isolated area N19
+08/05/17 18:50:32 : completer : isolated area N20
+08/05/17 18:50:32 : completer : isolated area N21
+08/05/17 18:50:32 : completer : isolated area N22
+08/05/17 18:50:32 : completer : isolated area N23
+08/05/17 18:50:32 : completer : isolated area N24
+08/05/17 18:50:32 : completer : isolated area N25
+08/05/17 18:50:32 : completer : isolated area N26
+08/05/17 18:50:32 : completer : isolated area N27
+08/05/17 18:50:32 : completer : isolated area N28
+08/05/17 18:50:33 : completer : isolated area N29
+08/05/17 18:50:33 : completer : isolated area N30
+08/05/17 18:50:33 : completer : isolated area N31
+08/05/17 18:50:33 : completer : isolated area N32
+08/05/17 18:50:33 : completer : isolated area N33
+08/05/17 18:50:33 : completer : isolated area N34
+08/05/17 18:50:33 : completer : isolated area N35
+08/05/17 18:50:33 : completer : isolated area N36
+08/05/17 18:50:33 : completer : isolated area N37
+08/05/17 18:50:33 : completer : isolated area N38
+08/05/17 18:50:33 : completer : isolated area N39
+08/05/17 18:50:33 : completer : isolated area N40
+08/05/17 18:50:34 : completer : isolated area N41
+08/05/17 18:50:34 : completer : isolated area N42
+08/05/17 18:50:34 : completer : isolated area N43
+08/05/17 18:50:34 : completer : isolated area N44
+08/05/17 18:50:34 : completer : isolated area N45
+08/05/17 18:50:34 : completer : isolated area N46
+08/05/17 18:50:34 : completer : isolated area N47
+08/05/17 18:50:34 : completer : isolated area N48
+08/05/17 18:50:34 : completer : isolated area N49
+08/05/17 18:50:34 : completer : isolated area N50
+08/05/17 18:50:34 : completer : isolated area N51
+08/05/17 18:50:34 : completer : isolated area N52
+08/05/17 18:50:34 : completer : isolated area N53
+08/05/17 18:50:35 : completer : isolated area N54
+08/05/17 18:50:35 : completer : isolated area N55
+08/05/17 18:50:35 : completer : isolated area N56
+08/05/17 18:50:35 : completer : isolated area N57
+08/05/17 18:50:35 : completer : isolated area N58
+08/05/17 18:50:35 : completer : isolated area N59
+08/05/17 18:50:35 : completer : isolated area N60
+08/05/17 18:50:35 : completer : isolated area N61
+08/05/17 18:50:35 : completer : isolated area N62
+08/05/17 18:50:35 : completer : isolated area N63
+08/05/17 18:50:35 : completer : isolated area N64
+08/05/17 18:50:35 : completer : isolated area N65
+08/05/17 18:50:35 : completer : isolated area N66
+08/05/17 18:50:36 : completer : isolated area N67
+08/05/17 18:50:36 : completer : isolated area N68
+08/05/17 18:50:36 : completer : isolated area N69
+08/05/17 18:50:36 : completer : isolated area N70
+08/05/17 18:50:36 : completer : isolated area N71
+08/05/17 18:50:36 : cg: (260096) ....... iter : 1, error : 1.87888E-006, 0 sec
+08/05/17 18:50:36 : completer : isolated area N72
+08/05/17 18:50:36 : completer : isolated area N73
+08/05/17 18:50:36 : completer : isolated area N74
+08/05/17 18:50:36 : completer : isolated area N75
+08/05/17 18:50:36 : completer : isolated area N76
+08/05/17 18:50:36 : completer : isolated area N77
+08/05/17 18:50:37 : completer : isolated area N78
+08/05/17 18:50:37 : completer : isolated area N79
+08/05/17 18:50:37 : completer : isolated area N80
+08/05/17 18:50:37 : completer : isolated area N81
+08/05/17 18:50:37 : completer : isolated area N82
+08/05/17 18:50:37 : completer : isolated area N83
+08/05/17 18:50:37 : completer : isolated area N84
+08/05/17 18:50:37 : completer : isolated area N85
+08/05/17 18:50:37 : completer : isolated area N86
+08/05/17 18:50:37 : completer : isolated area N87
+08/05/17 18:50:37 : completer : isolated area N88
+08/05/17 18:50:37 : completer : isolated area N89
+08/05/17 18:50:37 : completer : isolated area N90
+08/05/17 18:50:38 : completer : isolated area N91
+08/05/17 18:50:38 : completer : isolated area N92
+08/05/17 18:50:38 : completer : isolated area N93
+08/05/17 18:50:38 : completer : isolated area N94
+08/05/17 18:50:38 : completer : isolated area N95
+08/05/17 18:50:38 : completer : isolated area N96
+08/05/17 18:50:38 : completer : isolated area N97
+08/05/17 18:50:38 : completer : isolated area N98
+08/05/17 18:50:38 : completer : isolated area N99
+08/05/17 18:50:38 : completer : isolated area N100
+08/05/17 18:50:38 : completer : isolated area N101
+08/05/17 18:50:38 : completer : isolated area N102
+08/05/17 18:50:38 : completer : isolated area N103
+08/05/17 18:50:39 : completer : isolated area N104
+08/05/17 18:50:39 : completer : isolated area N105
+08/05/17 18:50:39 : completer : isolated area N106
+08/05/17 18:50:39 : completer : isolated area N107
+08/05/17 18:50:39 : completer : isolated area N108
+08/05/17 18:50:39 : completer : isolated area N109
+08/05/17 18:50:39 : completer : isolated area N110
+08/05/17 18:50:39 : completer : isolated area N111
+08/05/17 18:50:39 : completer : isolated area N112
+08/05/17 18:50:39 : completer : isolated area N113
+08/05/17 18:50:39 : completer : isolated area N114
+08/05/17 18:50:39 : completer : isolated area N115
+08/05/17 18:50:39 : completer : isolated area N116
+08/05/17 18:50:40 : completer : isolated area N117
+08/05/17 18:50:40 : completer : isolated area N118
+08/05/17 18:50:40 : completer : isolated area N119
+08/05/17 18:50:40 : completer : isolated area N120
+08/05/17 18:50:40 : completer : isolated area N121
+08/05/17 18:50:40 : completer : isolated area N122
+08/05/17 18:50:40 : completer : isolated area N123
+08/05/17 18:50:40 : completer : isolated area N124
+08/05/17 18:50:40 : completer : isolated area N125
+08/05/17 18:50:40 : completer : isolated area N126
+08/05/17 18:50:40 : completer : isolated area N127
+08/05/17 18:50:40 : completer : isolated area N128
+08/05/17 18:50:41 : completer : isolated area N129
+08/05/17 18:50:41 : completer : isolated area N130
+08/05/17 18:50:41 : completer : isolated area N131
+08/05/17 18:50:41 : completer : isolated area N132
+08/05/17 18:50:41 : completer : isolated area N133
+08/05/17 18:50:41 : completer : isolated area N134
+08/05/17 18:50:41 : completer : isolated area N135
+08/05/17 18:50:41 : completer : isolated area N136
+08/05/17 18:50:41 : completer : isolated area N137
+08/05/17 18:50:41 : completer : isolated area N138
+08/05/17 18:50:41 : completer : isolated area N139
+08/05/17 18:50:41 : completer : isolated area N140
+08/05/17 18:50:41 : completer : isolated area N141
+08/05/17 18:50:42 : completer : isolated area N142
+08/05/17 18:50:42 : completer : isolated area N143
+08/05/17 18:50:42 : completer : isolated area N144
+08/05/17 18:50:42 : completer : isolated area N145
+08/05/17 18:50:42 : completer : isolated area N146
+08/05/17 18:50:42 : completer : isolated area N147
+08/05/17 18:50:42 : completer : isolated area N148
+08/05/17 18:50:42 : completer : isolated area N149
+08/05/17 18:50:42 : completer : isolated area N150
+08/05/17 18:50:42 : completer : isolated area N151
+08/05/17 18:50:42 : completer : isolated area N152
+08/05/17 18:50:42 : completer : isolated area N153
+08/05/17 18:50:42 : completer : isolated area N154
+08/05/17 18:50:43 : completer : isolated area N155
+08/05/17 18:50:43 : completer : isolated area N156
+08/05/17 18:50:43 : completer : isolated area N157
+08/05/17 18:50:43 : completer : isolated area N158
+08/05/17 18:50:43 : completer : isolated area N159
+08/05/17 18:50:43 : completer : isolated area N160
+08/05/17 18:50:43 : completer : isolated area N161
+08/05/17 18:50:43 : completer : isolated area N162
+08/05/17 18:50:43 : completer : isolated area N163
+08/05/17 18:50:43 : completer : isolated area N164
+08/05/17 18:50:43 : completer : isolated area N165
+08/05/17 18:50:43 : completer : isolated area N166
+08/05/17 18:50:43 : completer : isolated area N167
+08/05/17 18:50:44 : completer : isolated area N168
+08/05/17 18:50:44 : completer : isolated area N169
+08/05/17 18:50:44 : completer : isolated area N170
+08/05/17 18:50:44 : completer : isolated area N171
+08/05/17 18:50:44 : completer : isolated area N172
+08/05/17 18:50:44 : completer : isolated area N173
+08/05/17 18:50:44 : completer : isolated area N174
+08/05/17 18:50:44 : completer : isolated area N175
+08/05/17 18:50:44 : completer : isolated area N176
+08/05/17 18:50:44 : cg: (260096) ....... iter : 1, error : 5.15496E-006, 0 sec
+08/05/17 18:50:44 : completer : isolated area N177
+08/05/17 18:50:44 : completer : isolated area N178
+08/05/17 18:50:44 : completer : isolated area N179
+08/05/17 18:50:45 : completer : isolated area N180
+08/05/17 18:50:45 : completer : isolated area N181
+08/05/17 18:50:45 : completer : isolated area N182
+08/05/17 18:50:45 : completer : isolated area N183
+08/05/17 18:50:45 : completer : isolated area N184
+08/05/17 18:50:45 : completer : isolated area N185
+08/05/17 18:50:45 : completer : isolated area N186
+08/05/17 18:50:45 : completer : isolated area N187
+08/05/17 18:50:45 : completer : isolated area N188
+08/05/17 18:50:45 : completer : processing whole area
+08/05/17 18:50:45 : cg: (260096) ....... iter : 1, error : 2.21792E-006, 1 sec
+08/05/17 18:50:46 : Projecting surf "map_faults" (512 x 508) => (519 x 508)
+08/05/17 18:50:46 : 
+08/05/17 18:50:46 : *************
+08/05/17 18:50:46 : * Phase 8, grid size = 519 x 508 (map_faults)
+08/05/17 18:50:46 : *************
+08/05/17 18:50:46 : points : (points1)
+08/05/17 18:50:46 : completer : processing...
+08/05/17 18:50:46 : completer_faults: "fault1", "fault2", "fault3", "fault4"
+08/05/17 18:50:46 :                   "fault5", "fault6", "fault7", "fault8"
+08/05/17 18:50:46 :                   "fault9", "fault10", "fault11"
+08/05/17 18:50:46 : solving near fault lines...
+08/05/17 18:50:46 : cg: (263652) ....... iter : 22, error : 9.48384E-006, 0 sec
+08/05/17 18:50:46 : completer : flood_areas_cnt = 190
+08/05/17 18:50:46 : completer : processing each isolated area (190)...
+08/05/17 18:50:46 : completer : isolated area N1
+08/05/17 18:50:46 : completer : isolated area N2
+08/05/17 18:50:46 : completer : isolated area N3
+08/05/17 18:50:47 : cg: (263652) ....... iter : 2, error : 8.18848E-006, 0 sec
+08/05/17 18:50:47 : completer : isolated area N4
+08/05/17 18:50:47 : completer : isolated area N5
+08/05/17 18:50:47 : completer : isolated area N6
+08/05/17 18:50:47 : completer : isolated area N7
+08/05/17 18:50:47 : completer : isolated area N8
+08/05/17 18:50:47 : completer : isolated area N9
+08/05/17 18:50:47 : completer : isolated area N10
+08/05/17 18:50:47 : completer : isolated area N11
+08/05/17 18:50:47 : completer : isolated area N12
+08/05/17 18:50:47 : completer : isolated area N13
+08/05/17 18:50:47 : completer : isolated area N14
+08/05/17 18:50:47 : completer : isolated area N15
+08/05/17 18:50:48 : completer : isolated area N16
+08/05/17 18:50:48 : completer : isolated area N17
+08/05/17 18:50:48 : completer : isolated area N18
+08/05/17 18:50:48 : completer : isolated area N19
+08/05/17 18:50:48 : completer : isolated area N20
+08/05/17 18:50:48 : completer : isolated area N21
+08/05/17 18:50:48 : completer : isolated area N22
+08/05/17 18:50:48 : completer : isolated area N23
+08/05/17 18:50:48 : completer : isolated area N24
+08/05/17 18:50:48 : completer : isolated area N25
+08/05/17 18:50:48 : completer : isolated area N26
+08/05/17 18:50:48 : completer : isolated area N27
+08/05/17 18:50:48 : completer : isolated area N28
+08/05/17 18:50:49 : completer : isolated area N29
+08/05/17 18:50:49 : completer : isolated area N30
+08/05/17 18:50:49 : completer : isolated area N31
+08/05/17 18:50:49 : completer : isolated area N32
+08/05/17 18:50:49 : completer : isolated area N33
+08/05/17 18:50:49 : completer : isolated area N34
+08/05/17 18:50:49 : completer : isolated area N35
+08/05/17 18:50:49 : completer : isolated area N36
+08/05/17 18:50:49 : completer : isolated area N37
+08/05/17 18:50:49 : completer : isolated area N38
+08/05/17 18:50:49 : completer : isolated area N39
+08/05/17 18:50:49 : completer : isolated area N40
+08/05/17 18:50:50 : completer : isolated area N41
+08/05/17 18:50:50 : completer : isolated area N42
+08/05/17 18:50:50 : completer : isolated area N43
+08/05/17 18:50:50 : completer : isolated area N44
+08/05/17 18:50:50 : completer : isolated area N45
+08/05/17 18:50:50 : completer : isolated area N46
+08/05/17 18:50:50 : completer : isolated area N47
+08/05/17 18:50:50 : completer : isolated area N48
+08/05/17 18:50:50 : completer : isolated area N49
+08/05/17 18:50:50 : completer : isolated area N50
+08/05/17 18:50:50 : completer : isolated area N51
+08/05/17 18:50:50 : completer : isolated area N52
+08/05/17 18:50:50 : completer : isolated area N53
+08/05/17 18:50:51 : completer : isolated area N54
+08/05/17 18:50:51 : completer : isolated area N55
+08/05/17 18:50:51 : completer : isolated area N56
+08/05/17 18:50:51 : completer : isolated area N57
+08/05/17 18:50:51 : completer : isolated area N58
+08/05/17 18:50:51 : completer : isolated area N59
+08/05/17 18:50:51 : completer : isolated area N60
+08/05/17 18:50:51 : completer : isolated area N61
+08/05/17 18:50:51 : completer : isolated area N62
+08/05/17 18:50:51 : completer : isolated area N63
+08/05/17 18:50:51 : completer : isolated area N64
+08/05/17 18:50:51 : completer : isolated area N65
+08/05/17 18:50:52 : completer : isolated area N66
+08/05/17 18:50:52 : completer : isolated area N67
+08/05/17 18:50:52 : completer : isolated area N68
+08/05/17 18:50:52 : completer : isolated area N69
+08/05/17 18:50:52 : completer : isolated area N70
+08/05/17 18:50:52 : cg: (263652) ....... iter : 1, error : 1.34241E-006, 0 sec
+08/05/17 18:50:52 : completer : isolated area N71
+08/05/17 18:50:52 : completer : isolated area N72
+08/05/17 18:50:52 : completer : isolated area N73
+08/05/17 18:50:52 : completer : isolated area N74
+08/05/17 18:50:52 : completer : isolated area N75
+08/05/17 18:50:52 : completer : isolated area N76
+08/05/17 18:50:52 : completer : isolated area N77
+08/05/17 18:50:53 : completer : isolated area N78
+08/05/17 18:50:53 : completer : isolated area N79
+08/05/17 18:50:53 : completer : isolated area N80
+08/05/17 18:50:53 : completer : isolated area N81
+08/05/17 18:50:53 : completer : isolated area N82
+08/05/17 18:50:53 : completer : isolated area N83
+08/05/17 18:50:53 : completer : isolated area N84
+08/05/17 18:50:53 : completer : isolated area N85
+08/05/17 18:50:53 : completer : isolated area N86
+08/05/17 18:50:53 : completer : isolated area N87
+08/05/17 18:50:53 : completer : isolated area N88
+08/05/17 18:50:53 : completer : isolated area N89
+08/05/17 18:50:54 : completer : isolated area N90
+08/05/17 18:50:54 : completer : isolated area N91
+08/05/17 18:50:54 : completer : isolated area N92
+08/05/17 18:50:54 : completer : isolated area N93
+08/05/17 18:50:54 : completer : isolated area N94
+08/05/17 18:50:54 : completer : isolated area N95
+08/05/17 18:50:54 : completer : isolated area N96
+08/05/17 18:50:54 : completer : isolated area N97
+08/05/17 18:50:54 : completer : isolated area N98
+08/05/17 18:50:54 : completer : isolated area N99
+08/05/17 18:50:54 : completer : isolated area N100
+08/05/17 18:50:54 : completer : isolated area N101
+08/05/17 18:50:54 : completer : isolated area N102
+08/05/17 18:50:55 : completer : isolated area N103
+08/05/17 18:50:55 : completer : isolated area N104
+08/05/17 18:50:55 : completer : isolated area N105
+08/05/17 18:50:55 : completer : isolated area N106
+08/05/17 18:50:55 : completer : isolated area N107
+08/05/17 18:50:55 : completer : isolated area N108
+08/05/17 18:50:55 : completer : isolated area N109
+08/05/17 18:50:55 : completer : isolated area N110
+08/05/17 18:50:55 : completer : isolated area N111
+08/05/17 18:50:55 : completer : isolated area N112
+08/05/17 18:50:55 : completer : isolated area N113
+08/05/17 18:50:55 : completer : isolated area N114
+08/05/17 18:50:55 : completer : isolated area N115
+08/05/17 18:50:56 : completer : isolated area N116
+08/05/17 18:50:56 : completer : isolated area N117
+08/05/17 18:50:56 : completer : isolated area N118
+08/05/17 18:50:56 : completer : isolated area N119
+08/05/17 18:50:56 : completer : isolated area N120
+08/05/17 18:50:56 : completer : isolated area N121
+08/05/17 18:50:56 : completer : isolated area N122
+08/05/17 18:50:56 : completer : isolated area N123
+08/05/17 18:50:56 : completer : isolated area N124
+08/05/17 18:50:56 : completer : isolated area N125
+08/05/17 18:50:56 : completer : isolated area N126
+08/05/17 18:50:56 : completer : isolated area N127
+08/05/17 18:50:57 : completer : isolated area N128
+08/05/17 18:50:57 : completer : isolated area N129
+08/05/17 18:50:57 : completer : isolated area N130
+08/05/17 18:50:57 : completer : isolated area N131
+08/05/17 18:50:57 : completer : isolated area N132
+08/05/17 18:50:57 : completer : isolated area N133
+08/05/17 18:50:57 : completer : isolated area N134
+08/05/17 18:50:57 : completer : isolated area N135
+08/05/17 18:50:57 : completer : isolated area N136
+08/05/17 18:50:57 : completer : isolated area N137
+08/05/17 18:50:57 : completer : isolated area N138
+08/05/17 18:50:57 : completer : isolated area N139
+08/05/17 18:50:57 : completer : isolated area N140
+08/05/17 18:50:58 : completer : isolated area N141
+08/05/17 18:50:58 : completer : isolated area N142
+08/05/17 18:50:58 : completer : isolated area N143
+08/05/17 18:50:58 : completer : isolated area N144
+08/05/17 18:50:58 : completer : isolated area N145
+08/05/17 18:50:58 : completer : isolated area N146
+08/05/17 18:50:58 : completer : isolated area N147
+08/05/17 18:50:58 : completer : isolated area N148
+08/05/17 18:50:58 : completer : isolated area N149
+08/05/17 18:50:58 : completer : isolated area N150
+08/05/17 18:50:58 : completer : isolated area N151
+08/05/17 18:50:58 : completer : isolated area N152
+08/05/17 18:50:59 : completer : isolated area N153
+08/05/17 18:50:59 : completer : isolated area N154
+08/05/17 18:50:59 : completer : isolated area N155
+08/05/17 18:50:59 : completer : isolated area N156
+08/05/17 18:50:59 : completer : isolated area N157
+08/05/17 18:50:59 : completer : isolated area N158
+08/05/17 18:50:59 : completer : isolated area N159
+08/05/17 18:50:59 : completer : isolated area N160
+08/05/17 18:50:59 : completer : isolated area N161
+08/05/17 18:50:59 : completer : isolated area N162
+08/05/17 18:50:59 : completer : isolated area N163
+08/05/17 18:50:59 : completer : isolated area N164
+08/05/17 18:50:59 : completer : isolated area N165
+08/05/17 18:51:00 : completer : isolated area N166
+08/05/17 18:51:00 : completer : isolated area N167
+08/05/17 18:51:00 : completer : isolated area N168
+08/05/17 18:51:00 : completer : isolated area N169
+08/05/17 18:51:00 : completer : isolated area N170
+08/05/17 18:51:00 : completer : isolated area N171
+08/05/17 18:51:00 : completer : isolated area N172
+08/05/17 18:51:00 : completer : isolated area N173
+08/05/17 18:51:00 : completer : isolated area N174
+08/05/17 18:51:00 : completer : isolated area N175
+08/05/17 18:51:00 : completer : isolated area N176
+08/05/17 18:51:00 : completer : isolated area N177
+08/05/17 18:51:01 : completer : isolated area N178
+08/05/17 18:51:01 : cg: (263652) ....... iter : 1, error : 1.88017E-006, 0 sec
+08/05/17 18:51:01 : completer : isolated area N179
+08/05/17 18:51:01 : completer : isolated area N180
+08/05/17 18:51:01 : completer : isolated area N181
+08/05/17 18:51:01 : completer : isolated area N182
+08/05/17 18:51:01 : completer : isolated area N183
+08/05/17 18:51:01 : completer : isolated area N184
+08/05/17 18:51:01 : completer : isolated area N185
+08/05/17 18:51:01 : completer : isolated area N186
+08/05/17 18:51:01 : completer : isolated area N187
+08/05/17 18:51:01 : completer : isolated area N188
+08/05/17 18:51:01 : completer : isolated area N189
+08/05/17 18:51:01 : completer : isolated area N190
+08/05/17 18:51:02 : completer : processing whole area
+08/05/17 18:51:02 : cg: (263652) ....... iter : 1, error : 1.69316E-006, 0 sec
+08/05/17 18:51:02 : Elapsed time 0 minutes 35 seconds
+08/05/17 18:51:02 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid.grd (Surfer GRD-ASCII)
+08/05/17 18:51:02 : Removing surfit_grid from memory.
+08/05/17 18:51:02 : removing surface "map_faults" from memory
+08/05/17 18:51:02 : removing points "points1" from memory
+08/05/17 18:51:02 : removing curve "fault11" from memory
+08/05/17 18:51:02 : removing curve "fault10" from memory
+08/05/17 18:51:02 : removing curve "fault9" from memory
+08/05/17 18:51:02 : removing curve "fault8" from memory
+08/05/17 18:51:02 : removing curve "fault7" from memory
+08/05/17 18:51:02 : removing curve "fault6" from memory
+08/05/17 18:51:02 : removing curve "fault5" from memory
+08/05/17 18:51:02 : removing curve "fault4" from memory
+08/05/17 18:51:02 : removing curve "fault3" from memory
+08/05/17 18:51:02 : removing curve "fault2" from memory
+08/05/17 18:51:02 : removing curve "fault1" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 18:57:53 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 18:57:53 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 18:57:53 : grid: (592103 <-> 597280) / 50; (5.72323e+006 <-> 5.7283e+006) / 50. 105x102
+08/05/17 18:57:53 : creating gridding rule points("points1")
+08/05/17 18:57:53 : creating gridding rule fault("fault1")
+08/05/17 18:57:53 : creating gridding rule completer(1,10,0,1)
+08/05/17 18:57:53 : 
+08/05/17 18:57:53 : 
+08/05/17 18:57:53 : 
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : points : (points1)
+08/05/17 18:57:53 : completer : processing...
+08/05/17 18:57:53 : completer_faults: "fault1"
+08/05/17 18:57:53 : solving near fault lines...
+08/05/17 18:57:53 : cg: (64) ....... iter : 54, error : 6.15454E-006, 0 sec
+08/05/17 18:57:53 : completer : flood_areas_cnt = 2
+08/05/17 18:57:53 : completer : processing each isolated area (2)...
+08/05/17 18:57:53 : completer : isolated area N1
+08/05/17 18:57:53 : cg: (64)  - nothing to do.
+08/05/17 18:57:53 : completer : isolated area N2
+08/05/17 18:57:53 : cg: (64)  - nothing to do.
+08/05/17 18:57:53 : completer : processing whole area
+08/05/17 18:57:53 : cg: (64)  - nothing to do.
+08/05/17 18:57:53 : 
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : points : (points1)
+08/05/17 18:57:53 : completer : processing...
+08/05/17 18:57:53 : completer_faults: "fault1"
+08/05/17 18:57:53 : solving near fault lines...
+08/05/17 18:57:53 : cg: (256) ....... iter : 63, error : 9.70443E-006, 0 sec
+08/05/17 18:57:53 : completer : flood_areas_cnt = 2
+08/05/17 18:57:53 : completer : processing each isolated area (2)...
+08/05/17 18:57:53 : completer : isolated area N1
+08/05/17 18:57:53 : cg: (256) ....... iter : 106, error : 9.97865E-006, 0 sec
+08/05/17 18:57:53 : completer : isolated area N2
+08/05/17 18:57:53 : cg: (256) ....... iter : 65, error :  3.1235E-006, 0 sec
+08/05/17 18:57:53 : completer : processing whole area
+08/05/17 18:57:53 : cg: (256)  - nothing to do.
+08/05/17 18:57:53 : 
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : points : (points1)
+08/05/17 18:57:53 : completer : processing...
+08/05/17 18:57:53 : completer_faults: "fault1"
+08/05/17 18:57:53 : solving near fault lines...
+08/05/17 18:57:53 : cg: (1024) ....... iter : 56, error : 7.53242E-006, 0 sec
+08/05/17 18:57:53 : completer : flood_areas_cnt = 2
+08/05/17 18:57:53 : completer : processing each isolated area (2)...
+08/05/17 18:57:53 : completer : isolated area N1
+08/05/17 18:57:53 : cg: (1024) ....... iter : 237, error : 9.98084E-006, 0 sec
+08/05/17 18:57:53 : completer : isolated area N2
+08/05/17 18:57:53 : cg: (1024) ....... iter : 129, error : 8.22707E-006, 0 sec
+08/05/17 18:57:53 : completer : processing whole area
+08/05/17 18:57:53 : cg: (1024) ....... iter : 1, error :  1.1032E-006, 0 sec
+08/05/17 18:57:53 : 
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : points : (points1)
+08/05/17 18:57:53 : completer : processing...
+08/05/17 18:57:53 : completer_faults: "fault1"
+08/05/17 18:57:53 : solving near fault lines...
+08/05/17 18:57:53 : cg: (4096) ....... iter : 63, error : 9.03976E-006, 0 sec
+08/05/17 18:57:53 : completer : flood_areas_cnt = 2
+08/05/17 18:57:53 : completer : processing each isolated area (2)...
+08/05/17 18:57:53 : completer : isolated area N1
+08/05/17 18:57:53 : cg: (4096) ....... iter : 155, error : 9.48017E-006, 0 sec
+08/05/17 18:57:53 : completer : isolated area N2
+08/05/17 18:57:53 : cg: (4096) ....... iter : 57, error : 8.26053E-006, 0 sec
+08/05/17 18:57:53 : completer : processing whole area
+08/05/17 18:57:53 : cg: (4096) ....... iter : 1, error :  8.4398E-007, 0 sec
+08/05/17 18:57:53 : Projecting surf "map_faults" (64 x 64) => (105 x 102)
+08/05/17 18:57:53 : 
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : * Phase 5, grid size = 105 x 102 (map_faults)
+08/05/17 18:57:53 : *************
+08/05/17 18:57:53 : points : (points1)
+08/05/17 18:57:53 : completer : processing...
+08/05/17 18:57:53 : completer_faults: "fault1"
+08/05/17 18:57:53 : solving near fault lines...
+08/05/17 18:57:53 : cg: (10710) ....... iter : 48, error : 9.11942E-006, 0 sec
+08/05/17 18:57:53 : completer : flood_areas_cnt = 2
+08/05/17 18:57:53 : completer : processing each isolated area (2)...
+08/05/17 18:57:53 : completer : isolated area N1
+08/05/17 18:57:53 : cg: (10710) ....... iter : 71, error : 9.83807E-006, 0 sec
+08/05/17 18:57:53 : completer : isolated area N2
+08/05/17 18:57:53 : cg: (10710) ....... iter : 2, error : 7.05272E-006, 0 sec
+08/05/17 18:57:53 : completer : processing whole area
+08/05/17 18:57:53 : cg: (10710) ....... iter : 1, error : 1.98104E-006, 0 sec
+08/05/17 18:57:53 : Elapsed time 0 minutes 0 seconds
+08/05/17 18:57:53 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid.grd (Surfer GRD-ASCII)
+08/05/17 18:57:53 : Removing surfit_grid from memory.
+08/05/17 18:57:53 : removing surface "map_faults" from memory
+08/05/17 18:57:53 : removing points "points1" from memory
+08/05/17 18:57:53 : removing curve "fault1" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 19:03:18 : Error! No such file or directory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 19:33:15 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 19:33:15 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 19:33:15 : grid: (590977 <-> 601740) / 50; (5.72316e+006 <-> 5.72877e+006) / 50. 216x113
+08/05/17 19:33:15 : creating gridding rule points("points1")
+08/05/17 19:33:15 : creating gridding rule fault("fault1")
+08/05/17 19:33:15 : creating gridding rule completer(1,5,0,1)
+08/05/17 19:33:15 : 
+08/05/17 19:33:15 : 
+08/05/17 19:33:15 : 
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : points : (points1)
+08/05/17 19:33:15 : completer : processing...
+08/05/17 19:33:15 : completer_faults: "fault1"
+08/05/17 19:33:15 : solving near fault lines...
+08/05/17 19:33:15 : cg: (64) ....... iter : 77, error : 1.76688E-006, 0 sec
+08/05/17 19:33:15 : completer : flood_areas_cnt = 2
+08/05/17 19:33:15 : completer : processing each isolated area (2)...
+08/05/17 19:33:15 : completer : isolated area N1
+08/05/17 19:33:15 : cg: (64)  - nothing to do.
+08/05/17 19:33:15 : completer : isolated area N2
+08/05/17 19:33:15 : cg: (64)  - nothing to do.
+08/05/17 19:33:15 : completer : processing whole area
+08/05/17 19:33:15 : cg: (64)  - nothing to do.
+08/05/17 19:33:15 : 
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : points : (points1)
+08/05/17 19:33:15 : completer : processing...
+08/05/17 19:33:15 : completer_faults: "fault1"
+08/05/17 19:33:15 : solving near fault lines...
+08/05/17 19:33:15 : cg: (256) ....... iter : 63, error : 7.78365E-006, 0 sec
+08/05/17 19:33:15 : completer : flood_areas_cnt = 2
+08/05/17 19:33:15 : completer : processing each isolated area (2)...
+08/05/17 19:33:15 : completer : isolated area N1
+08/05/17 19:33:15 : cg: (256) ....... iter : 133, error :  4.0753E-006, 0 sec
+08/05/17 19:33:15 : completer : isolated area N2
+08/05/17 19:33:15 : cg: (256) ....... iter : 97, error : 9.73372E-006, 0 sec
+08/05/17 19:33:15 : completer : processing whole area
+08/05/17 19:33:15 : cg: (256) ....... iter : 1, error : 2.88253E-006, 0 sec
+08/05/17 19:33:15 : 
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : points : (points1)
+08/05/17 19:33:15 : completer : processing...
+08/05/17 19:33:15 : completer_faults: "fault1"
+08/05/17 19:33:15 : solving near fault lines...
+08/05/17 19:33:15 : cg: (1024) ....... iter : 64, error : 6.37977E-006, 0 sec
+08/05/17 19:33:15 : completer : flood_areas_cnt = 2
+08/05/17 19:33:15 : completer : processing each isolated area (2)...
+08/05/17 19:33:15 : completer : isolated area N1
+08/05/17 19:33:15 : cg: (1024) ....... iter : 204, error : 9.60968E-006, 0 sec
+08/05/17 19:33:15 : completer : isolated area N2
+08/05/17 19:33:15 : cg: (1024) ....... iter : 363, error : 9.94031E-006, 0 sec
+08/05/17 19:33:15 : completer : processing whole area
+08/05/17 19:33:15 : cg: (1024) ....... iter : 1, error : 1.06874E-006, 0 sec
+08/05/17 19:33:15 : 
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : points : (points1)
+08/05/17 19:33:15 : completer : processing...
+08/05/17 19:33:15 : completer_faults: "fault1"
+08/05/17 19:33:15 : solving near fault lines...
+08/05/17 19:33:15 : cg: (4096) ....... iter : 55, error : 7.35354E-006, 0 sec
+08/05/17 19:33:15 : completer : processing whole area
+08/05/17 19:33:15 : cg: (4096) ....... iter : 145, error : 9.93426E-006, 0 sec
+08/05/17 19:33:15 : Projecting surf "map_faults" (64 x 64) => (128 x 113)
+08/05/17 19:33:15 : 
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : * Phase 5, grid size = 128 x 113 (map_faults)
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : points : (points1)
+08/05/17 19:33:15 : completer : processing...
+08/05/17 19:33:15 : completer_faults: "fault1"
+08/05/17 19:33:15 : solving near fault lines...
+08/05/17 19:33:15 : cg: (14464) ....... iter : 40, error : 8.06111E-006, 0 sec
+08/05/17 19:33:15 : completer : processing whole area
+08/05/17 19:33:15 : cg: (14464) ....... iter : 82, error :  9.4343E-006, 0 sec
+08/05/17 19:33:15 : Projecting surf "map_faults" (128 x 113) => (216 x 113)
+08/05/17 19:33:15 : 
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : * Phase 6, grid size = 216 x 113 (map_faults)
+08/05/17 19:33:15 : *************
+08/05/17 19:33:15 : points : (points1)
+08/05/17 19:33:15 : completer : processing...
+08/05/17 19:33:15 : completer_faults: "fault1"
+08/05/17 19:33:15 : solving near fault lines...
+08/05/17 19:33:15 : cg: (24408) ....... iter : 28, error :  7.6467E-006, 0 sec
+08/05/17 19:33:15 : completer : processing whole area
+08/05/17 19:33:15 : cg: (24408) ....... iter : 26, error :  9.9608E-006, 0 sec
+08/05/17 19:33:15 : Elapsed time 0 minutes 0 seconds
+08/05/17 19:33:15 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid.grd (Surfer GRD-ASCII)
+08/05/17 19:33:15 : Removing surfit_grid from memory.
+08/05/17 19:33:15 : removing surface "map_faults" from memory
+08/05/17 19:33:15 : removing points "points1" from memory
+08/05/17 19:33:15 : removing curve "fault1" from memory
+loading module surfit_io v3.0
+loading module globe v3.0
+loading module freeflow v3.0
+08/05/17 19:34:13 : reading points "points1" from file c:/users/viktor/appdata/local/temp/temppoints.txt
+08/05/17 19:34:13 : loading curve "fault1" from ESRI shape file c:/users/viktor/appdata/local/temp/tempfaults.shp
+08/05/17 19:34:13 : grid: (590977 <-> 601740) / 50; (5.72316e+006 <-> 5.72877e+006) / 50. 216x113
+08/05/17 19:34:13 : creating gridding rule points("points1")
+08/05/17 19:34:13 : creating gridding rule fault("fault1")
+08/05/17 19:34:13 : creating gridding rule completer(1,50,0,1)
+08/05/17 19:34:13 : 
+08/05/17 19:34:13 : 
+08/05/17 19:34:13 : 
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : * Phase 1, grid size = 8 x 8 (map_faults)
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : points : (points1)
+08/05/17 19:34:13 : completer : processing...
+08/05/17 19:34:13 : completer_faults: "fault1"
+08/05/17 19:34:13 : solving near fault lines...
+08/05/17 19:34:13 : cg: (64) ....... iter : 82, error :  4.9768E-007, 0 sec
+08/05/17 19:34:13 : completer : flood_areas_cnt = 2
+08/05/17 19:34:13 : completer : processing each isolated area (2)...
+08/05/17 19:34:13 : completer : isolated area N1
+08/05/17 19:34:13 : cg: (64)  - nothing to do.
+08/05/17 19:34:13 : completer : isolated area N2
+08/05/17 19:34:13 : cg: (64)  - nothing to do.
+08/05/17 19:34:13 : completer : processing whole area
+08/05/17 19:34:13 : cg: (64)  - nothing to do.
+08/05/17 19:34:13 : 
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : * Phase 2, grid size = 16 x 16 (map_faults)
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : points : (points1)
+08/05/17 19:34:13 : completer : processing...
+08/05/17 19:34:13 : completer_faults: "fault1"
+08/05/17 19:34:13 : solving near fault lines...
+08/05/17 19:34:13 : cg: (256) ....... iter : 76, error : 5.02975E-006, 0 sec
+08/05/17 19:34:13 : completer : flood_areas_cnt = 2
+08/05/17 19:34:13 : completer : processing each isolated area (2)...
+08/05/17 19:34:13 : completer : isolated area N1
+08/05/17 19:34:13 : cg: (256) ....... iter : 175, error : 7.22526E-006, 0 sec
+08/05/17 19:34:13 : completer : isolated area N2
+08/05/17 19:34:13 : cg: (256) ....... iter : 149, error : 7.30853E-006, 0 sec
+08/05/17 19:34:13 : completer : processing whole area
+08/05/17 19:34:13 : cg: (256) ....... iter : 1, error : 4.73989E-006, 0 sec
+08/05/17 19:34:13 : 
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : * Phase 3, grid size = 32 x 32 (map_faults)
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : points : (points1)
+08/05/17 19:34:13 : completer : processing...
+08/05/17 19:34:13 : completer_faults: "fault1"
+08/05/17 19:34:13 : solving near fault lines...
+08/05/17 19:34:13 : cg: (1024) ....... iter : 133, error : 8.24443E-006, 0 sec
+08/05/17 19:34:13 : completer : flood_areas_cnt = 2
+08/05/17 19:34:13 : completer : processing each isolated area (2)...
+08/05/17 19:34:13 : completer : isolated area N1
+08/05/17 19:34:13 : cg: (1024) ....... iter : 384, error : 9.32613E-006, 0 sec
+08/05/17 19:34:13 : completer : isolated area N2
+08/05/17 19:34:13 : cg: (1024) ....... iter : 503, error :  6.0355E-006, 0 sec
+08/05/17 19:34:13 : completer : processing whole area
+08/05/17 19:34:13 : cg: (1024)  - nothing to do.
+08/05/17 19:34:13 : 
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : * Phase 4, grid size = 64 x 64 (map_faults)
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : points : (points1)
+08/05/17 19:34:13 : completer : processing...
+08/05/17 19:34:13 : completer_faults: "fault1"
+08/05/17 19:34:13 : solving near fault lines...
+08/05/17 19:34:13 : cg: (4096) ....... iter : 75, error :   7.283E-006, 0 sec
+08/05/17 19:34:13 : completer : processing whole area
+08/05/17 19:34:13 : cg: (4096) ....... iter : 251, error : 9.90851E-006, 0 sec
+08/05/17 19:34:13 : Projecting surf "map_faults" (64 x 64) => (128 x 113)
+08/05/17 19:34:13 : 
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : * Phase 5, grid size = 128 x 113 (map_faults)
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : points : (points1)
+08/05/17 19:34:13 : completer : processing...
+08/05/17 19:34:13 : completer_faults: "fault1"
+08/05/17 19:34:13 : solving near fault lines...
+08/05/17 19:34:13 : cg: (14464) ....... iter : 54, error : 7.68876E-006, 0 sec
+08/05/17 19:34:13 : completer : processing whole area
+08/05/17 19:34:13 : cg: (14464) ....... iter : 48, error : 9.90409E-006, 0 sec
+08/05/17 19:34:13 : Projecting surf "map_faults" (128 x 113) => (216 x 113)
+08/05/17 19:34:13 : 
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : * Phase 6, grid size = 216 x 113 (map_faults)
+08/05/17 19:34:13 : *************
+08/05/17 19:34:13 : points : (points1)
+08/05/17 19:34:13 : completer : processing...
+08/05/17 19:34:13 : completer_faults: "fault1"
+08/05/17 19:34:13 : solving near fault lines...
+08/05/17 19:34:13 : cg: (24408) ....... iter : 31, error :  8.5067E-006, 0 sec
+08/05/17 19:34:13 : completer : processing whole area
+08/05/17 19:34:13 : cg: (24408) ....... iter : 22, error : 9.90596E-006, 0 sec
+08/05/17 19:34:13 : Elapsed time 0 minutes 0 seconds
+08/05/17 19:34:13 : Saving surf map_faults to file c:/users/viktor/appdata/local/temp/tempgrid1.grd (Surfer GRD-ASCII)
+08/05/17 19:34:13 : Removing surfit_grid from memory.
+08/05/17 19:34:13 : removing surface "map_faults" from memory
+08/05/17 19:34:13 : removing points "points1" from memory
+08/05/17 19:34:13 : removing curve "fault1" from memory
