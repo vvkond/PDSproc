@@ -127,7 +127,7 @@ class TigSurfitAlgorithm(GeoAlgorithm):
         self.prepareJob()
         self.runSurfit(progress)
 
-        runStr = 'gdal_translate -a_nodata -999 -a_srs "{0}" {1} {2}'.format(provider.crs().toProj4(), self.grdFilename, output )
+        runStr = 'gdal_translate -a_nodata -999 -a_srs "{0}" "{1}" "{2}"'.format(provider.crs().toProj4(), self.grdFilename, output )
         self.runProcess(runStr, progress)
 
 
