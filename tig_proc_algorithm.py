@@ -22,7 +22,7 @@ from processing.core.parameters import ParameterMultipleInput
 from processing.core.parameters import ParameterRaster
 from processing.core.parameters import ParameterVector
 from processing.core.parameters import ParameterTableField
-from processing.core.parameters import ParameterNumber
+from processing.core.parameters import ParameterNumber, ParameterExtent
 from processing.core.outputs import OutputRaster
 from processing.tools import dataobjects, vector
 from processing.tools.vector import VectorWriter
@@ -54,6 +54,7 @@ class TigSurfitAlgorithm(GeoAlgorithm):
     STEP_Y_VALUE = 'STEP_Y'
     EXPAND_PERCENT_X = 'EXPAND_PERCENT_X'
     EXPAND_PERCENT_Y = 'EXPAND_PERCENT_Y'
+    INPUT_EXTENT = 'INPUT_EXTENT'
 
     def defineCharacteristics(self):
         """Here we define the inputs and output of the algorithm, along
@@ -75,6 +76,8 @@ class TigSurfitAlgorithm(GeoAlgorithm):
 
         self.addParameter(ParameterVector(self.INPUT_FAULT,
             self.tr('Input faults'), [ParameterVector.VECTOR_TYPE_LINE], True))
+
+        self.addParameter(ParameterExtent(self.INPUT_EXTENT, self.tr('Extent'), '0,0,0,0', True))
 
         self.addParameter(ParameterNumber(self.STEP_X_VALUE, self.tr('Step X'), 0, None, 0, True))
         self.addParameter(ParameterNumber(self.STEP_Y_VALUE, self.tr('Step Y'), 0, None, 0, True))
@@ -115,6 +118,16 @@ class TigSurfitAlgorithm(GeoAlgorithm):
         vectorLayer = dataobjects.getObjectFromUri(inputFilename)
         self.extent = vectorLayer.extent()
         provider = vectorLayer.dataProvider()
+
+        ext = self.getParameterValue(self.INPUT_EXTENT)
+        if len(ext):
+            vals = ext.split(',')
+            if len(vals) == 4:
+                ext = QgsRectangle(float(vals[0]), float(vals[2]), float(vals[1]), float(vals[3]))
+                if ext.height() > 1 and ext.width() > 1:
+                    self.extent = ext
+                    progress.setInfo('Grid extent is set to: {0}'.format(self.extent.asWktCoordinates()))
+
 
         self.stepX = self.getParameterValue(self.STEP_X_VALUE)
         self.stepY = self.getParameterValue(self.STEP_Y_VALUE)
@@ -204,11 +217,13 @@ class TigSurfitAlgorithm(GeoAlgorithm):
             expY = self.getParameterValue(self.EXPAND_PERCENT_Y)
             deltaX = self.extent.width() / 100.0 * expX
             deltaY = self.extent.height() / 100.0 * expY
-            text_file.write("grid_get {0} {1} {2} {3} {4} {5}\n".format(self.extent.xMinimum()-deltaX/2,
-                                                                self.extent.xMaximum()+deltaX/2,
+            offX = self.stepX / 2.0
+            offY = self.stepY / 2.0
+            text_file.write("grid_get {0} {1} {2} {3} {4} {5}\n".format(self.extent.xMinimum()-deltaX/2 + offX,
+                                                                self.extent.xMaximum()+deltaX/2 - offX,
                                                                 self.stepX,
-                                                                self.extent.yMinimum()-deltaY/2,
-                                                                self.extent.yMaximum()+deltaY/2,
+                                                                self.extent.yMinimum()-deltaY/2 + offY,
+                                                                self.extent.yMaximum()+deltaY/2 - offY,
                                                                 self.stepY))
             # text_file.write("grid 50 50\n")
             ##
