@@ -36,6 +36,9 @@ from tig_proc_merge import TigMergeLayersAlgorithm
 from tig_proc_contours import TigContouringAlgorithm
 from tig_proc_triangle import TigTriangleAlgorithm
 from tig_proc_reservesByRaster import TigReservesByRasterAlgorithm
+from tig_proc_correction import TigSurfaceCorrectionAlgorithm
+from tig_proc_surfIntersection import TigSurfaceIntersectCorrectAlgorithm
+from tig_proc_reservesVolume import TigVolumeMethodAlgorithm
 
 
 class TigSurfitProvider(AlgorithmProvider):
@@ -47,7 +50,10 @@ class TigSurfitProvider(AlgorithmProvider):
         # Load algorithms
         self.alglist = [TigSurfitAlgorithm(), TigMergeLayersAlgorithm(),
                         TigContouringAlgorithm(), TigTriangleAlgorithm(),
-                        TigReservesByRasterAlgorithm()]
+                        TigReservesByRasterAlgorithm(),
+                        TigSurfaceCorrectionAlgorithm(),
+                        TigSurfaceIntersectCorrectAlgorithm(),
+                        TigVolumeMethodAlgorithm()]
 
         for alg in self.alglist:
             alg.provider = self

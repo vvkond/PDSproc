@@ -48,8 +48,14 @@ class TigSurfitAlgorithm(GeoAlgorithm):
 
     OUTPUT_LAYER = 'OUTPUT_LAYER'
     INPUT_LAYER = 'INPUT_LAYER'
-    INPUT_FAULT = 'INPUT_FAULT'
     INPUT_FIELD = 'INPUT_FIELD'
+    INPUT_LAYER1 = 'INPUT_LAYER1'
+    INPUT_FIELD1 = 'INPUT_FIELD1'
+    INPUT_LAYER2 = 'INPUT_LAYER2'
+    INPUT_FIELD2 = 'INPUT_FIELD2'
+    INPUT_LAYER3 = 'INPUT_LAYER3'
+    INPUT_FIELD3 = 'INPUT_FIELD3'
+    INPUT_FAULT = 'INPUT_FAULT'
     STEP_X_VALUE = 'STEP_X'
     STEP_Y_VALUE = 'STEP_Y'
     EXPAND_PERCENT_X = 'EXPAND_PERCENT_X'
@@ -67,26 +73,47 @@ class TigSurfitAlgorithm(GeoAlgorithm):
         # The branch of the toolbox under which the algorithm will appear
         self.group = u'Grids'
 
-        # We add the input vector layer. It can have any kind of geometry
-        # It is a mandatory (not optional) one, hence the False argument
         self.addParameter(ParameterVector(self.INPUT_LAYER,
-            self.tr('Input points'), [ParameterVector.VECTOR_TYPE_POINT], False))
-        self.addParameter(ParameterTableField(self.INPUT_FIELD, self.tr('Field name'),
+                                          u'Исходные данные 1',
+                                          [ParameterVector.VECTOR_TYPE_POINT, ParameterVector.VECTOR_TYPE_LINE], False))
+
+        self.addParameter(ParameterTableField(self.INPUT_FIELD, u'Поле 1',
             self.INPUT_LAYER, ParameterTableField.DATA_TYPE_NUMBER))
 
+        self.addParameter(ParameterVector(self.INPUT_LAYER1,
+                                          u'  Исходные данные 2 ',
+                                          [ParameterVector.VECTOR_TYPE_POINT, ParameterVector.VECTOR_TYPE_LINE], True))
+
+        self.addParameter(ParameterTableField(self.INPUT_FIELD1, u'  Поле 2 ',
+                                              self.INPUT_LAYER1, ParameterTableField.DATA_TYPE_NUMBER, True))
+
+        self.addParameter(ParameterVector(self.INPUT_LAYER2,
+                                          u'    Исходные данные 3 ',
+                                          [ParameterVector.VECTOR_TYPE_POINT, ParameterVector.VECTOR_TYPE_LINE], True))
+
+        self.addParameter(ParameterTableField(self.INPUT_FIELD2, u'    Поле 3 ',
+                                              self.INPUT_LAYER2, ParameterTableField.DATA_TYPE_NUMBER, True))
+
+        self.addParameter(ParameterVector(self.INPUT_LAYER3,
+                                          u'      Исходные данные 4 ',
+                                          [ParameterVector.VECTOR_TYPE_POINT, ParameterVector.VECTOR_TYPE_LINE], True))
+
+        self.addParameter(ParameterTableField(self.INPUT_FIELD3, u'      Поле 4 ',
+                                              self.INPUT_LAYER3, ParameterTableField.DATA_TYPE_NUMBER, True))
+
         self.addParameter(ParameterVector(self.INPUT_FAULT,
-            self.tr('Input faults'), [ParameterVector.VECTOR_TYPE_LINE], True))
+            u'Разломы ', [ParameterVector.VECTOR_TYPE_LINE], True))
 
-        self.addParameter(ParameterExtent(self.INPUT_EXTENT, self.tr('Extent'), '0,0,0,0', True))
+        self.addParameter(ParameterExtent(self.INPUT_EXTENT, u'Границы ', '0,0,0,0', True))
 
-        self.addParameter(ParameterNumber(self.STEP_X_VALUE, self.tr('Step X'), 0, None, 0, True))
-        self.addParameter(ParameterNumber(self.STEP_Y_VALUE, self.tr('Step Y'), 0, None, 0, True))
+        self.addParameter(ParameterNumber(self.STEP_X_VALUE, u'Шаг по X ', 0, None, 0, True))
+        self.addParameter(ParameterNumber(self.STEP_Y_VALUE, u'Шаг по Y ', 0, None, 0, True))
 
-        self.addParameter(ParameterNumber(self.EXPAND_PERCENT_X, self.tr('Expand X (%)'), 0, None, 10, True))
-        self.addParameter(ParameterNumber(self.EXPAND_PERCENT_Y, self.tr('Expand Y (%)'), 0, None, 10, True))
+        self.addParameter(ParameterNumber(self.EXPAND_PERCENT_X, u'Расширение по X (%)', 0, None, 10, True))
+        self.addParameter(ParameterNumber(self.EXPAND_PERCENT_Y, u'Расширение по Y (%)', 0, None, 10, True))
 
         # We add a raster layer as output
-        self.addOutput(OutputRaster(self.OUTPUT_LAYER, self.tr('Output surface')))
+        self.addOutput(OutputRaster(self.OUTPUT_LAYER, u'Поверхность'))
 
     def processAlgorithm(self, progress):
         """Here is where the processing itself takes place."""
@@ -136,7 +163,9 @@ class TigSurfitAlgorithm(GeoAlgorithm):
         if self.stepY < 1:
             self.stepY = self.extent.height() / 100
 
-        self.prepareInputData()
+        if not self.prepareInputData(progress):
+            return
+
         self.prepareJob()
         self.runSurfit(progress)
 
@@ -144,22 +173,83 @@ class TigSurfitAlgorithm(GeoAlgorithm):
         self.runProcess(runStr, progress)
 
 
-    def prepareInputData(self):
-        inputFilename = self.getParameterValue(self.INPUT_LAYER)
+    def prepareInputData(self, progress):
         inputFaultFilename = self.getParameterValue(self.INPUT_FAULT)
+
+        inputDatas = []
+        #Data #1
+        inputFilename = self.getParameterValue(self.INPUT_LAYER)
         input_field = self.getParameterValue(self.INPUT_FIELD)
+        inputDataItem = {}
+        inputDataItem['fileName'] = inputFilename
+        inputDataItem['field'] = input_field
+        inputDatas.append(inputDataItem)
 
-        vectorLayer = dataobjects.getObjectFromUri(inputFilename)
+        #Data #2
+        inputFilename = self.getParameterValue(self.INPUT_LAYER1)
+        input_field = self.getParameterValue(self.INPUT_FIELD1)
+        if inputFilename:
+            if input_field:
+                inputDataItem = {}
+                inputDataItem['fileName'] = inputFilename
+                inputDataItem['field'] = input_field
+                inputDatas.append(inputDataItem)
+            else:
+                progress.error(u'Не указано поле для набора данных 2')
+                return False
 
-        features = vectorLayer.getFeatures()
+        # Data #3
+        inputFilename = self.getParameterValue(self.INPUT_LAYER2)
+        input_field = self.getParameterValue(self.INPUT_FIELD2)
+        if inputFilename and input_field:
+            if input_field:
+                inputDataItem = {}
+                inputDataItem['fileName'] = inputFilename
+                inputDataItem['field'] = input_field
+                inputDatas.append(inputDataItem)
+            else:
+                progress.error(u'Не указано поле для набора данных 3')
+                return False
+
+        # Data #4
+        inputFilename = self.getParameterValue(self.INPUT_LAYER3)
+        input_field = self.getParameterValue(self.INPUT_FIELD3)
+        if inputFilename:
+            if input_field:
+                inputDataItem = {}
+                inputDataItem['fileName'] = inputFilename
+                inputDataItem['field'] = input_field
+                inputDatas.append(inputDataItem)
+            else:
+                progress.error(u'Не указано поле для набора данных 4')
+                return False
+
+
         with open(self.tempPointsFilename, "w") as text_file:
-            for f in features:
-                pt = f.geometry().asPoint()
-                val = f.attribute(input_field)
-                text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
+            for item in inputDatas:
+                inputFilename = item['fileName']
+                input_field = item['field']
+                vectorLayer = dataobjects.getObjectFromUri(inputFilename)
+                features = vectorLayer.getFeatures()
+                for f in features:
+                    geom = f.geometry()
+                    if geom.wkbType() == QGis.WKBPoint:
+                        pt = geom.asPoint()
+                        val = f.attribute(input_field)
+                        text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
+                    elif geom.wkbType() == QGis.WKBMultiPoint:
+                        points = geom.asMultiPoint()
+                        for pt in points:
+                            val = f.attribute(input_field)
+                            text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
+                    elif geom.wkbType() == QGis.WKBLineString:
+                        points = geom.asPolyline()
+                        for pt in points:
+                            val = f.attribute(input_field)
+                            text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
 
         if inputFaultFilename is None:
-            return
+            return True
 
         #Create fault lines SHP
         vectorLayer = dataobjects.getObjectFromUri(inputFaultFilename)
@@ -184,6 +274,8 @@ class TigSurfitAlgorithm(GeoAlgorithm):
             num = num + 1
             writer.addFeature(feat)
         del writer
+
+        return True
 
 
     def prepareJob(self):
