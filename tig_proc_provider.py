@@ -39,6 +39,7 @@ from tig_proc_reservesByRaster import TigReservesByRasterAlgorithm
 from tig_proc_correction import TigSurfaceCorrectionAlgorithm
 from tig_proc_surfIntersection import TigSurfaceIntersectCorrectAlgorithm
 from tig_proc_reservesVolume import TigVolumeMethodAlgorithm
+from tig_proc_upd_point_locaion import TigUpdatePointLocationAlgorithm
 
 
 class TigSurfitProvider(AlgorithmProvider):
@@ -53,7 +54,8 @@ class TigSurfitProvider(AlgorithmProvider):
                         TigReservesByRasterAlgorithm(),
                         TigSurfaceCorrectionAlgorithm(),
                         TigSurfaceIntersectCorrectAlgorithm(),
-                        TigVolumeMethodAlgorithm()]
+                        TigVolumeMethodAlgorithm(),
+                        TigUpdatePointLocationAlgorithm()]
 
         for alg in self.alglist:
             alg.provider = self
@@ -67,9 +69,9 @@ class TigSurfitProvider(AlgorithmProvider):
         deactivating the algorithms in the provider.
         """
         AlgorithmProvider.initializeSettings(self)
-        ProcessingConfig.addSetting(Setting('Tigress processing',
+        ProcessingConfig.addSetting(Setting('Pumaplus',
             TigSurfitProvider.TIG_GRIDDING_SETTING,
-            'Tigress setting', 'Default value'))
+            'PUMA setting', 'Default value'))
 
     def unload(self):
         """Setting should be removed here, so they do not appear anymore
@@ -85,12 +87,12 @@ class TigSurfitProvider(AlgorithmProvider):
         It is also used to create the command line name of all the
         algorithms from this provider.
         """
-        return "Tigress processing"
+        return "Pumaplus"
 
     def getDescription(self):
         """This is the provired full name.
         """
-        return "Tigress processing"
+        return "Pumaplus"
 
     def getIcon(self):
         """We return the default icon.
