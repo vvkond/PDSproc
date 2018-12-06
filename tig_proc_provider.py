@@ -31,15 +31,16 @@ __revision__ = '$Format:%H$'
 
 from processing.core.AlgorithmProvider import AlgorithmProvider
 from processing.core.ProcessingConfig import Setting, ProcessingConfig
-from tig_proc_algorithm import TigSurfitAlgorithm
-from tig_proc_merge import TigMergeLayersAlgorithm
-from tig_proc_contours import TigContouringAlgorithm
-from tig_proc_triangle import TigTriangleAlgorithm
-from tig_proc_reservesByRaster import TigReservesByRasterAlgorithm
-from tig_proc_correction import TigSurfaceCorrectionAlgorithm
-from tig_proc_surfIntersection import TigSurfaceIntersectCorrectAlgorithm
-from tig_proc_reservesVolume import TigVolumeMethodAlgorithm
-from tig_proc_upd_point_locaion import TigUpdatePointLocationAlgorithm
+from tig_proc_algorithm             import TigSurfitAlgorithm
+from tig_proc_merge                 import TigMergeLayersAlgorithm
+from tig_proc_contours              import TigContouringAlgorithm
+from tig_proc_triangle              import TigTriangleAlgorithm
+from tig_proc_reservesByRaster      import TigReservesByRasterAlgorithm
+from tig_proc_correction            import TigSurfaceCorrectionAlgorithm
+from tig_proc_surfIntersection      import TigSurfaceIntersectCorrectAlgorithm
+from tig_proc_reservesVolume        import TigVolumeMethodAlgorithm
+from tig_proc_upd_point_locaion     import TigUpdatePointLocationAlgorithm
+from tig_proc_set_custom_prop       import TigSetCustomProp 
 
 
 class TigSurfitProvider(AlgorithmProvider):
@@ -49,13 +50,16 @@ class TigSurfitProvider(AlgorithmProvider):
         AlgorithmProvider.__init__(self)
 
         # Load algorithms
-        self.alglist = [TigSurfitAlgorithm(), TigMergeLayersAlgorithm(),
+        self.alglist = [
+                        TigSurfitAlgorithm(), TigMergeLayersAlgorithm(),
                         TigContouringAlgorithm(), TigTriangleAlgorithm(),
                         TigReservesByRasterAlgorithm(),
                         TigSurfaceCorrectionAlgorithm(),
                         TigSurfaceIntersectCorrectAlgorithm(),
                         TigVolumeMethodAlgorithm(),
-                        TigUpdatePointLocationAlgorithm()]
+                        TigUpdatePointLocationAlgorithm(),
+                        TigSetCustomProp()
+                        ]
 
         for alg in self.alglist:
             alg.provider = self
