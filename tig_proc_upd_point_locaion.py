@@ -79,7 +79,7 @@ class TigUpdatePointLocationAlgorithm(GeoAlgorithm):
                 self.FIELD_TO_JOIN_A #id
                 , self.tr('Field for join layers in A(default well_id)') #display text
                 , self.LAYER_A #field layer
-                , False #field type (int)
+                , ParameterTableField.DATA_TYPE_ANY
                 , True #[is Optional?]
                 ))
 
@@ -96,7 +96,7 @@ class TigUpdatePointLocationAlgorithm(GeoAlgorithm):
                 self.FIELD_TO_JOIN_B #id
                 , self.tr('Field to for layers in B(default well_id)') #display text
                 , self.LAYER_B #field layer
-                , False #field type (int)
+                , ParameterTableField.DATA_TYPE_ANY
                 , True #[is Optional?]
                 ))
 
