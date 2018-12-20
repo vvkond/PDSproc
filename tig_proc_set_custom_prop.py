@@ -26,7 +26,9 @@ from processing.core.outputs import OutputVector
 from processing.tools import dataobjects, vector
 from processing.tools.vector import VectorWriter
 
-
+#===============================================================================
+# 
+#===============================================================================
 class TigSetCustomProp(GeoAlgorithm):
     """This is an example algorithm that takes a vector layer and
     creates a new one just with just those features of the input
@@ -48,9 +50,11 @@ class TigSetCustomProp(GeoAlgorithm):
     PROP_NAME="PROPERTY"
     PROP_VALUE="VALUE"
 
-#self.layer.setCustomProperty("qgis_pds_type", "pds_fond")
-#layer.customProperty("qgis_pds_type") 
-
+    #self.layer.setCustomProperty("qgis_pds_type", "pds_fond")
+    #layer.customProperty("qgis_pds_type") 
+    #===========================================================================
+    # 
+    #===========================================================================
     def defineCharacteristics(self):
         """Here we define the inputs and output of the algorithm, along
         with some other properties.
@@ -79,7 +83,7 @@ class TigSetCustomProp(GeoAlgorithm):
                 , 'qgis_pds_type' #default
                 , False # is big text?
                 , False
-                , False 
+                #, False #for 2.14
                 ))    
         self.addParameter(
             ParameterString(  #name='', description='', default=None, multiline=False,  optional=False, evaluateExpressions=False
@@ -88,10 +92,12 @@ class TigSetCustomProp(GeoAlgorithm):
                 , 'pds_cumulative_production'
                 , False 
                 , False
-                , False 
+                #, False #for 2.14
                 ))
 
-
+    #===========================================================================
+    # 
+    #===========================================================================
     def processAlgorithm(self, progress):
         """Here is where the processing itself takes place."""
         Layer_to_update = self.getParameterValue(self.LAYER_A)

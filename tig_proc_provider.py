@@ -41,6 +41,8 @@ from tig_proc_surfIntersection      import TigSurfaceIntersectCorrectAlgorithm
 from tig_proc_reservesVolume        import TigVolumeMethodAlgorithm
 from tig_proc_upd_point_locaion     import TigUpdatePointLocationAlgorithm
 from tig_proc_set_custom_prop       import TigSetCustomProp 
+from tig_proc_upd_lbl_locaion       import TigUpdateLabelLocationAlgorithm
+from tig_proc_upd_table_field       import TigUpdateTableFieldAlgorithm
 
 
 class TigSurfitProvider(AlgorithmProvider):
@@ -58,7 +60,9 @@ class TigSurfitProvider(AlgorithmProvider):
                         TigSurfaceIntersectCorrectAlgorithm(),
                         TigVolumeMethodAlgorithm(),
                         TigUpdatePointLocationAlgorithm(),
-                        TigSetCustomProp()
+                        TigSetCustomProp(),
+                        TigUpdateLabelLocationAlgorithm(),
+                        TigUpdateTableFieldAlgorithm()
                         ]
 
         for alg in self.alglist:
