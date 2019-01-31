@@ -233,20 +233,21 @@ class TigSurfitAlgorithm(GeoAlgorithm):
                 features = vectorLayer.getFeatures()
                 for f in features:
                     geom = f.geometry()
-                    if geom.wkbType() == QGis.WKBPoint:
-                        pt = geom.asPoint()
-                        val = f.attribute(input_field)
-                        text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
-                    elif geom.wkbType() == QGis.WKBMultiPoint:
-                        points = geom.asMultiPoint()
-                        for pt in points:
+                    if geom:
+                        if geom.wkbType() == QGis.WKBPoint:
+                            pt = geom.asPoint()
                             val = f.attribute(input_field)
                             text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
-                    elif geom.wkbType() == QGis.WKBLineString:
-                        points = geom.asPolyline()
-                        for pt in points:
-                            val = f.attribute(input_field)
-                            text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
+                        elif geom.wkbType() == QGis.WKBMultiPoint:
+                            points = geom.asMultiPoint()
+                            for pt in points:
+                                val = f.attribute(input_field)
+                                text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
+                        elif geom.wkbType() == QGis.WKBLineString:
+                            points = geom.asPolyline()
+                            for pt in points:
+                                val = f.attribute(input_field)
+                                text_file.write("{0} {1} {2}\n".format(pt.x(), pt.y(), val))
 
         if inputFaultFilename is None:
             return True
