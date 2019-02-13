@@ -50,18 +50,19 @@ def load_class(full_class_string,on_except=None):
             raise 
 
 
-TigSurfitAlgorithm                   =load_class('PDSproc.tig_proc_algorithm.TigSurfitAlgorithm'                        ,on_except=lambda:None)
-TigMergeLayersAlgorithm              =load_class('PDSproc.tig_proc_merge.TigMergeLayersAlgorithm'                       ,on_except=lambda:None)
-TigContouringAlgorithm               =load_class('PDSproc.tig_proc_contours.TigContouringAlgorithm'                     ,on_except=lambda:None)
-TigTriangleAlgorithm                 =load_class('PDSproc.tig_proc_triangle.TigTriangleAlgorithm'                       ,on_except=lambda:None)
-TigReservesByRasterAlgorithm         =load_class('PDSproc.tig_proc_reservesByRaster.TigReservesByRasterAlgorithm'       ,on_except=lambda:None)
-TigSurfaceCorrectionAlgorithm        =load_class('PDSproc.tig_proc_correction.TigSurfaceCorrectionAlgorithm'            ,on_except=lambda:None)
-TigSurfaceIntersectCorrectAlgorithm  =load_class('PDSproc.tig_proc_surfIntersection.TigSurfaceIntersectCorrectAlgorithm',on_except=lambda:None)
-TigVolumeMethodAlgorithm             =load_class('PDSproc.tig_proc_reservesVolume.TigVolumeMethodAlgorithm'             ,on_except=lambda:None)
-TigUpdatePointLocationAlgorithm      =load_class('PDSproc.tig_proc_upd_point_locaion.TigUpdatePointLocationAlgorithm'   ,on_except=lambda:None)
-TigSetCustomProp                     =load_class('PDSproc.tig_proc_set_custom_prop.TigSetCustomProp'                    ,on_except=lambda:None)
-TigUpdateLabelLocationAlgorithm      =load_class('PDSproc.tig_proc_upd_lbl_locaion.TigUpdateLabelLocationAlgorithm'     ,on_except=lambda:None)
-TigUpdateTableFieldAlgorithm         =load_class('PDSproc.tig_proc_upd_table_field.TigUpdateTableFieldAlgorithm'        ,on_except=lambda:None)
+TigSurfitAlgorithm                      =load_class('PDSproc.tig_proc_algorithm.TigSurfitAlgorithm'                                    ,on_except=lambda:None)
+TigMergeLayersAlgorithm                 =load_class('PDSproc.tig_proc_merge.TigMergeLayersAlgorithm'                                   ,on_except=lambda:None)
+TigContouringAlgorithm                  =load_class('PDSproc.tig_proc_contours.TigContouringAlgorithm'                                 ,on_except=lambda:None)
+TigTriangleAlgorithm                    =load_class('PDSproc.tig_proc_triangle.TigTriangleAlgorithm'                                   ,on_except=lambda:None)
+TigReservesByRasterAlgorithm            =load_class('PDSproc.tig_proc_reservesByRaster.TigReservesByRasterAlgorithm'                   ,on_except=lambda:None)
+TigSurfaceCorrectionAlgorithm           =load_class('PDSproc.tig_proc_correction.TigSurfaceCorrectionAlgorithm'                        ,on_except=lambda:None)
+TigSurfaceIntersectCorrectAlgorithm     =load_class('PDSproc.tig_proc_surfIntersection.TigSurfaceIntersectCorrectAlgorithm'            ,on_except=lambda:None)
+TigVolumeMethodAlgorithm                =load_class('PDSproc.tig_proc_reservesVolume.TigVolumeMethodAlgorithm'                         ,on_except=lambda:None)
+TigUpdatePointLocationAlgorithm         =load_class('PDSproc.tig_proc_upd_point_locaion.TigUpdatePointLocationAlgorithm'               ,on_except=lambda:None)
+TigSetCustomProp                        =load_class('PDSproc.tig_proc_set_custom_prop.TigSetCustomProp'                                ,on_except=lambda:None)
+TigUpdateLabelLocationAlgorithm         =load_class('PDSproc.tig_proc_upd_lbl_locaion.TigUpdateLabelLocationAlgorithm'                 ,on_except=lambda:None)
+TigUpdateTableFieldAlgorithm            =load_class('PDSproc.tig_proc_upd_table_field.TigUpdateTableFieldAlgorithm'                    ,on_except=lambda:None)
+TigCreateMultilineRuleLabelAlgorithm    =load_class('PDSproc.tig_proc_createMultilineRuledLabel.TigCreateMultilineRuleLabelAlgorithm'  ,on_except=lambda:None)
 
 #from tig_proc_algorithm             import TigSurfitAlgorithm
 #from tig_proc_merge                 import TigMergeLayersAlgorithm
@@ -94,7 +95,8 @@ class TigSurfitProvider(AlgorithmProvider):
                         TigUpdatePointLocationAlgorithm(),
                         TigSetCustomProp(),
                         TigUpdateLabelLocationAlgorithm(),
-                        TigUpdateTableFieldAlgorithm()
+                        TigUpdateTableFieldAlgorithm(),
+                        TigCreateMultilineRuleLabelAlgorithm()
                         ]
         self.alglist=filter(lambda alg:alg is not None, self.alglist)
         for alg in self.alglist:
