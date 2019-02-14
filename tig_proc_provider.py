@@ -51,7 +51,7 @@ def load_class(full_class_string,on_except=None):
 
 
 TigSurfitAlgorithm                      =load_class('PDSproc.tig_proc_algorithm.TigSurfitAlgorithm'                                    ,on_except=lambda:None)
-TigMergeLayersAlgorithm                 =load_class('PDSproc.tig_proc_merge.TigMergeLayersAlgorithm'                                   ,on_except=lambda:None)
+#TigMergeLayersAlgorithm                 =load_class('PDSproc.tig_proc_merge.TigMergeLayersAlgorithm'                                   ,on_except=lambda:None)
 TigContouringAlgorithm                  =load_class('PDSproc.tig_proc_contours.TigContouringAlgorithm'                                 ,on_except=lambda:None)
 TigTriangleAlgorithm                    =load_class('PDSproc.tig_proc_triangle.TigTriangleAlgorithm'                                   ,on_except=lambda:None)
 TigReservesByRasterAlgorithm            =load_class('PDSproc.tig_proc_reservesByRaster.TigReservesByRasterAlgorithm'                   ,on_except=lambda:None)
@@ -86,7 +86,8 @@ class TigSurfitProvider(AlgorithmProvider):
 
         # Load algorithms
         self.alglist = [
-                        TigSurfitAlgorithm(), TigMergeLayersAlgorithm(),
+                        TigSurfitAlgorithm(), 
+                        #TigMergeLayersAlgorithm(), #use default QGIS ALG   processing.tools.general.runalg("qgis:mergevectorlayers")
                         TigContouringAlgorithm(), TigTriangleAlgorithm(),
                         TigReservesByRasterAlgorithm(),
                         TigSurfaceCorrectionAlgorithm(),
