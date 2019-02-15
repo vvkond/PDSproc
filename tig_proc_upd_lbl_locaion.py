@@ -267,10 +267,12 @@ class TigUpdateLabelLocationAlgorithm(GeoAlgorithm):
         joinObject.targetFieldName = _joinfield__to
         joinObject.memoryCache = True
         joinObject.prefix='upd_lbl_'
-        joinObject.setJoinFieldNamesSubset([_copyfield_lblx_from
+        joinObject.setJoinFieldNamesSubset([
+                                            _copyfield_lblx_from
                                             ,_copyfield_lbly_from
                                             ,_copyfield_lblxoff_from
                                             ,_copyfield_lblyoff_from
+                                            ,_copyfield_lbloff_from
                                             ])
         Layer_to_update.addJoin(joinObject)
         #---copy filter expression
