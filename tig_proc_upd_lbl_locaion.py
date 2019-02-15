@@ -21,6 +21,7 @@ from processing.core.parameters import ParameterMultipleInput
 from processing.core.parameters import ParameterRaster
 from processing.core.parameters import ParameterVector
 from processing.core.parameters import ParameterTableField
+from processing.core.parameters import ParameterBoolean
 from processing.core.outputs import OutputVector
 from processing.tools import dataobjects, vector
 from processing.tools.vector import VectorWriter
@@ -52,6 +53,8 @@ class TigUpdateLabelLocationAlgorithm(GeoAlgorithm):
     FIELD_LBLXOFF_FROM="FIELD_B_XOFF"
     FIELD_LBLYOFF_FROM="FIELD_B_YOFF"
     FIELD_LBLOFF_FROM="FIELD_B_OFF"
+    
+    IS_REMOVE_JOIN="IS_REMOVE_JOIN"
 
     ##_joinfield__to=optional field Layer_to_update
     ##_joinfield__from=optional field Layer_from_update
@@ -138,6 +141,16 @@ class TigUpdateLabelLocationAlgorithm(GeoAlgorithm):
                 , ParameterTableField.DATA_TYPE_ANY
                 , True #[is Optional?]
                 ))
+
+        #---------------
+        self.addParameter(
+            ParameterBoolean(
+                self.IS_REMOVE_JOIN #id
+                , self.tr('Remove join after algorithm?') #display text
+                , True #default
+                ))
+ 
+        
 
         #---------------LAYER B
         self.addParameter(
@@ -226,6 +239,8 @@ class TigUpdateLabelLocationAlgorithm(GeoAlgorithm):
         _copyfield_lblxoff_from  = self.getParameterValue(self.FIELD_LBLXOFF_FROM)
         _copyfield_lblyoff_from  = self.getParameterValue(self.FIELD_LBLYOFF_FROM)
         _copyfield_lbloff_from   = self.getParameterValue(self.FIELD_LBLOFF_FROM)
+        
+        _is_remove_join          = self.getParameterValue(self.IS_REMOVE_JOIN)
 
         #--- create virtual field with geometry
         Layer_from_update=dataobjects.getObject(Layer_from_update)  #processing.getObjectFromUri()
@@ -308,13 +323,14 @@ class TigUpdateLabelLocationAlgorithm(GeoAlgorithm):
         #Layer_to_update.endEditCommand()
         progress.setText('Commit changes')
         Layer_to_update.commitChanges()
+        #--- remove layers join
+        if _is_remove_join:
+            progress.setText('Remove join {}->{}'.format(Layer_to_update.id(),Layer_from_update.id()))
+            Layer_to_update.removeJoin( Layer_from_update.id() )
         #--- restore filter expression
         progress.setText('Restore subsetString to "{}"'.format(filter_exp))
         Layer_to_update.setSubsetString(filter_exp)
-        #--- remove layers join
-        progress.setText('Remove join {}->{}'.format(Layer_to_update.id(),Layer_from_update.id()))
-        Layer_to_update.removeJoin( Layer_from_update.id() )
-        progress.setText('<b>End</b>')
         
+        progress.setText('<b>End</b>')
                     
         
