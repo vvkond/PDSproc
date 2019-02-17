@@ -80,7 +80,7 @@ class TigSetCustomProp(GeoAlgorithm):
             ParameterString( #name='', description='', default=None, multiline=False,  optional=False, evaluateExpressions=False
                 self.PROP_NAME    #name
                 , u'Имя свойства' #desc
-                , 'qgis_pds_type' #default
+                , 'qgis_pds_type/pds_prod_SelectedReservoirs/pds_prod_PhaseFilter/..' #default
                 , False # is big text?
                 , False
                 #, False #for 2.14
