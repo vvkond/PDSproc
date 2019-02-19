@@ -63,19 +63,7 @@ TigSetCustomProp                        =load_class('PDSproc.tig_proc_set_custom
 TigUpdateLabelLocationAlgorithm         =load_class('PDSproc.tig_proc_upd_lbl_locaion.TigUpdateLabelLocationAlgorithm'                 ,on_except=lambda:None)
 TigUpdateTableFieldAlgorithm            =load_class('PDSproc.tig_proc_upd_table_field.TigUpdateTableFieldAlgorithm'                    ,on_except=lambda:None)
 TigCreateMultilineRuleLabelAlgorithm    =load_class('PDSproc.tig_proc_createMultilineRuledLabel.TigCreateMultilineRuleLabelAlgorithm'  ,on_except=lambda:None)
-
-#from tig_proc_algorithm             import TigSurfitAlgorithm
-#from tig_proc_merge                 import TigMergeLayersAlgorithm
-#from tig_proc_contours              import TigContouringAlgorithm
-#from tig_proc_triangle              import TigTriangleAlgorithm
-#from tig_proc_reservesByRaster      import TigReservesByRasterAlgorithm
-#from tig_proc_correction            import TigSurfaceCorrectionAlgorithm
-#from tig_proc_surfIntersection      import TigSurfaceIntersectCorrectAlgorithm
-#from tig_proc_reservesVolume        import TigVolumeMethodAlgorithm
-#from tig_proc_upd_point_locaion     import TigUpdatePointLocationAlgorithm
-#from tig_proc_set_custom_prop       import TigSetCustomProp 
-#from tig_proc_upd_lbl_locaion       import TigUpdateLabelLocationAlgorithm
-#from tig_proc_upd_table_field       import TigUpdateTableFieldAlgorithm
+TigSetMapVariable                       =load_class('PDSproc.tig_proc_set_map_variable.TigSetMapVariable'                              ,on_except=lambda:None) 
 
 
 class TigSurfitProvider(AlgorithmProvider):
@@ -86,18 +74,20 @@ class TigSurfitProvider(AlgorithmProvider):
 
         # Load algorithms
         self.alglist = [
-                        TigSurfitAlgorithm(), 
-                        #TigMergeLayersAlgorithm(), #use default QGIS ALG   processing.tools.general.runalg("qgis:mergevectorlayers")
-                        TigContouringAlgorithm(), TigTriangleAlgorithm(),
-                        TigReservesByRasterAlgorithm(),
-                        TigSurfaceCorrectionAlgorithm(),
-                        TigSurfaceIntersectCorrectAlgorithm(),
-                        TigVolumeMethodAlgorithm(),
-                        TigUpdatePointLocationAlgorithm(),
-                        TigSetCustomProp(),
-                        TigUpdateLabelLocationAlgorithm(),
-                        TigUpdateTableFieldAlgorithm(),
-                        TigCreateMultilineRuleLabelAlgorithm()
+                        TigSurfitAlgorithm() 
+                        #,TigMergeLayersAlgorithm(), #use default QGIS ALG   processing.tools.general.runalg("qgis:mergevectorlayers")
+                        ,TigContouringAlgorithm()
+                        ,TigTriangleAlgorithm()
+                        ,TigReservesByRasterAlgorithm()
+                        ,TigSurfaceCorrectionAlgorithm()
+                        ,TigSurfaceIntersectCorrectAlgorithm()
+                        ,TigVolumeMethodAlgorithm()
+                        ,TigUpdatePointLocationAlgorithm()
+                        ,TigSetCustomProp()
+                        ,TigUpdateLabelLocationAlgorithm()
+                        ,TigUpdateTableFieldAlgorithm()
+                        ,TigCreateMultilineRuleLabelAlgorithm()
+                        ,TigSetMapVariable()
                         ]
         self.alglist=filter(lambda alg:alg is not None, self.alglist)
         for alg in self.alglist:
