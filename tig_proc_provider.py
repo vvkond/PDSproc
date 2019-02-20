@@ -65,6 +65,7 @@ TigUpdateLabelLocationAlgorithm         =load_class('PDSproc.tig_proc_upd_lbl_lo
 TigUpdateTableFieldAlgorithm            =load_class('PDSproc.tig_proc_upd_table_field.TigUpdateTableFieldAlgorithm'                    ,on_except=lambda:None)
 TigCreateMultilineRuleLabelAlgorithm    =load_class('PDSproc.tig_proc_createMultilineRuledLabel.TigCreateMultilineRuleLabelAlgorithm'  ,on_except=lambda:None)
 TigSetMapVariable                       =load_class('PDSproc.tig_proc_set_map_variable.TigSetMapVariable'                              ,on_except=lambda:None) 
+TigShowRuleLabelContours                =load_class('PDSproc.tig_proc_showRuledContours.TigShowRuleLabelContours'                      ,on_except=lambda:None)
 
 
 class TigSurfitProvider(AlgorithmProvider):
@@ -90,6 +91,7 @@ class TigSurfitProvider(AlgorithmProvider):
                         ,TigUpdateTableFieldAlgorithm()
                         ,TigCreateMultilineRuleLabelAlgorithm()
                         ,TigSetMapVariable()
+                        ,TigShowRuleLabelContours()
                         ]
         self.alglist=filter(lambda alg:alg is not None, self.alglist)
         for alg in self.alglist:
