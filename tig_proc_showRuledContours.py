@@ -134,6 +134,10 @@ class TigShowRuleLabelContours(GeoAlgorithm):
         editLayer=dataobjects.getObject(Layer_to_update)      #processing.getObjectFromUri()
         layerCurrentStyleRendere=editLayer.rendererV2()
         if not type(layerCurrentStyleRendere)==QgsRuleBasedRendererV2:
+            editLayerStyles=editLayer.styleManager()
+            editLayerStyles.addStyle( u'контуры', editLayerStyles.style(editLayerStyles.currentStyle() ))
+            editLayerStyles.setCurrentStyle(u'контуры')
+
             progress.setText('Change style rendered to rule based')
             renderer = QgsRuleBasedRendererV2(QgsRuleBasedRendererV2.Rule(None))
             superRootRule = renderer.rootRule() #super Root Rule
