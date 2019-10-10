@@ -68,6 +68,7 @@ TigSetMapVariable                       =load_class('PDSproc.tig_proc_set_map_va
 TigShowRuleLabelContours                =load_class('PDSproc.tig_proc_showRuledContours.TigShowRuleLabelContours'                      ,on_except=lambda:None)
 TigJoinLayersAlgorithm                  =load_class('PDSproc.tig_proc_join_layers.TigJoinLayersAlgorithm'                              ,on_except=lambda:None)
 TigSwitchLayerStyleAlgorithm            =load_class('PDSproc.tig_proc_style_switch.TigSwitchLayerStyleAlgorithm'                       ,on_except=lambda:None)
+TigJoinDeviLayersAlgorithm              =load_class('PDSproc.tig_proc_join_devi.TigJoinDeviLayersAlgorithm'                            ,on_except=lambda:None)
 
 
 class TigSurfitProvider(AlgorithmProvider):
@@ -96,6 +97,7 @@ class TigSurfitProvider(AlgorithmProvider):
                         ,TigShowRuleLabelContours()
                         ,TigJoinLayersAlgorithm()
                         ,TigSwitchLayerStyleAlgorithm()
+                        ,TigJoinDeviLayersAlgorithm()
                         ]
         self.alglist=filter(lambda alg:alg is not None, self.alglist)
         for alg in self.alglist:
