@@ -13,8 +13,8 @@ import tempfile
 import os
 
 from PyQt4.QtCore import QSettings, QProcess, QVariant
-from qgis.utils import iface
-from qgis.core import *
+from qgis.utils   import iface
+from qgis.core    import *
 
 from processing.core.GeoAlgorithm import GeoAlgorithm
 from processing.core.parameters import ParameterMultipleInput
@@ -25,7 +25,6 @@ from processing.core.parameters import ParameterBoolean,ParameterString
 from processing.core.outputs import OutputVector
 from processing.tools import dataobjects, vector
 from processing.tools.vector import VectorWriter
-
 
 #===============================================================================
 # 
@@ -51,7 +50,6 @@ def qgs_get_all_rules(rule):
     else:
         pass
     return res
-
 #===============================================================================
 # 
 #===============================================================================
@@ -172,19 +170,19 @@ class TigJoinDeviLayersAlgorithm(GeoAlgorithm):
         self.addParameter(
             ParameterBoolean(
                 self.ENABLE_DEVI_ST #id
-                , self.tr('Enable devi start point?') #display text
-                , True #default
-                ))
-        self.addParameter(
-            ParameterBoolean(
-                self.ENABLE_DEVI_END #id
-                , self.tr('Enable devi end point?') #display text
+                , self.tr('Add devi start point?') #display text
                 , True #default
                 ))
         self.addParameter(
             ParameterBoolean(
                 self.ENABLE_DEVI_LINE #id
-                , self.tr('Enable devi line?') #display text
+                , self.tr('Add devi line?') #display text
+                , True #default
+                ))
+        self.addParameter(
+            ParameterBoolean(
+                self.ENABLE_DEVI_END #id
+                , self.tr('Add devi end point?') #display text
                 , True #default
                 ))
         #---------------
@@ -299,81 +297,85 @@ class TigJoinDeviLayersAlgorithm(GeoAlgorithm):
                 new_grp_rule.setActive(_enable_devi)
                 #new_grp_rule.setRuleKey(u'devi')  # --- ID OF DEVI GRP   rootRule.removeChild(rootRule.findRuleByKey(u'its rule key')) MUST BE UNIQUE
                 #---------УСТЬЕ
-                symbolLayer = QgsGeometryGeneratorSymbolLayerV2.create()
-                symbolLayer.setGeometryExpression(' start_point( geom_from_wkt( "{}{}" ))'.format(_prefix,_join_what))  #  end_point(  geom_from_wkt( "_devi" ))
-                symbolLayer.setSymbolType(QgsSymbolV2.Marker)
-                sub_symbol=QgsMarkerSymbolV2.createSimple({
-                                               'name': 'circle'
-                                             , 'outline_color': "255.0.0.0"
-                                             , 'outline_style':'solid'
-                                             , 'outline_width_unit':'MM'
-                                             , 'scale_method':'diameter'
-                                             , 'size_unit':'MM'
-                                             , 'color': "227,26,28,255"
-                                             , 'offset': '0,0'
-                                             , 'angle':'0'
-                                             , 'size':'2'
-                                            })
-                symbolLayer.setSubSymbol(sub_symbol)
-                symbol = QgsMarkerSymbolV2([symbolLayer.clone()])  #---need clone!!! or take error when create again symbolLayer /symbol  
-                sub_rule = QgsRuleBasedRendererV2.Rule(symbol)
-                sub_rule.setLabel(u"ствол")
-                sub_rule.setDescription(u'devi_start.Dont replace it')
-                sub_rule.setActive(_enable_devi_st)
-                #sub_rule.setRuleKey(u'devi_start')   # MUST BE UNIQUE
-                sub_rule.setFilterExpression(u'') 
-                new_grp_rule.appendChild(sub_rule.clone())         #---need clone!!! or take error when create again symbolLayer /symbol
+                if _enable_devi_st:
+                    symbolLayer = QgsGeometryGeneratorSymbolLayerV2.create()
+                    symbolLayer.setGeometryExpression(' start_point( geom_from_wkt( "{}{}" ))'.format(_prefix,_join_what))  #  end_point(  geom_from_wkt( "_devi" ))
+                    symbolLayer.setSymbolType(QgsSymbolV2.Marker)
+                    sub_symbol=QgsMarkerSymbolV2.createSimple({
+                                                   'name': 'circle'
+                                                 , 'outline_color': "255.0.0.0"
+                                                 , 'outline_style':'solid'
+                                                 , 'outline_width_unit':'MM'
+                                                 , 'scale_method':'diameter'
+                                                 , 'size_unit':'MM'
+                                                 , 'color': "227,26,28,255"
+                                                 , 'offset': '0,0'
+                                                 , 'angle':'0'
+                                                 , 'size':'2'
+                                                })
+                    symbolLayer.setSubSymbol(sub_symbol)
+                    symbol = QgsMarkerSymbolV2([symbolLayer.clone()])  #---need clone!!! or take error when create again symbolLayer /symbol  
+                    sub_rule = QgsRuleBasedRendererV2.Rule(symbol)
+                    sub_rule.setLabel(u"ствол")
+                    sub_rule.setDescription(u'devi_start.Dont replace it')
+                    sub_rule.setActive(True)
+                    #sub_rule.setRuleKey(u'devi_start')   # MUST BE UNIQUE
+                    sub_rule.setFilterExpression(u'') 
+                    new_grp_rule.appendChild(sub_rule.clone())         #---need clone!!! or take error when create again symbolLayer /symbol
                 #---------СТВОЛ
-                symbolLayer = QgsGeometryGeneratorSymbolLayerV2.create()
-                symbolLayer.setGeometryExpression(' geom_from_wkt( "{}{}" )'.format(_prefix,_join_what))
-                symbolLayer.setSymbolType(QgsSymbolV2.Line)
-                sub_symbol=QgsLineSymbolV2.createSimple({
-                                               'line_color': "0,0,0,255"
-                                             , 'line_width':'0.26'
-                                             , 'line_width_unit':'MM'
-                                             , 'capstyle':'square'
-                                             , 'line_style':'solid'
-                                             , 'joinstyle':'bevel'
-                                             , 'draw_inside_polygon':'0'
-                                             , 'use_custom_dash':'0'
-                                            })
-                symbolLayer.setSubSymbol(sub_symbol)
-                symbol = QgsMarkerSymbolV2([symbolLayer.clone()])  #---need clone!!! or take error when create again symbolLayer /symbol                  
-                sub_rule = QgsRuleBasedRendererV2.Rule(symbol)
-                sub_rule.setLabel(u"ствол")
-                sub_rule.setDescription(u'devi_line.Dont replace it')
-                sub_rule.setActive(_enable_devi_line)
-                #sub_rule.setRuleKey(u'devi_line')   # MUST BE UNIQUE
-                sub_rule.setFilterExpression(u'') 
-                new_grp_rule.appendChild(sub_rule.clone())        #---need clone!!! or take error when create again symbolLayer /symbol
+                if _enable_devi_line:
+                    symbolLayer = QgsGeometryGeneratorSymbolLayerV2.create()
+                    symbolLayer.setGeometryExpression(' geom_from_wkt( "{}{}" )'.format(_prefix,_join_what))
+                    symbolLayer.setSymbolType(QgsSymbolV2.Line)
+                    sub_symbol=QgsLineSymbolV2.createSimple({
+                                                   'line_color': "0,0,0,255"
+                                                 , 'line_width':'0.26'
+                                                 , 'line_width_unit':'MM'
+                                                 , 'capstyle':'square'
+                                                 , 'line_style':'solid'
+                                                 , 'joinstyle':'bevel'
+                                                 , 'draw_inside_polygon':'0'
+                                                 , 'use_custom_dash':'0'
+                                                })
+                    symbolLayer.setSubSymbol(sub_symbol)
+                    symbol = QgsMarkerSymbolV2([symbolLayer.clone()])  #---need clone!!! or take error when create again symbolLayer /symbol                  
+                    sub_rule = QgsRuleBasedRendererV2.Rule(symbol)
+                    sub_rule.setLabel(u"ствол")
+                    sub_rule.setDescription(u'devi_line.Dont replace it')
+                    sub_rule.setActive(True)
+                    #sub_rule.setRuleKey(u'devi_line')   # MUST BE UNIQUE
+                    sub_rule.setFilterExpression(u'') 
+                    new_grp_rule.appendChild(sub_rule.clone())        #---need clone!!! or take error when create again symbolLayer /symbol
                 #---------ЗАБОЙ
-                symbolLayer = QgsGeometryGeneratorSymbolLayerV2.create()
-                symbolLayer.setGeometryExpression(' end_point( geom_from_wkt( "{}{}" ))'.format(_prefix,_join_what))  #  end_point(  geom_from_wkt( "_devi" ))
-                symbolLayer.setSymbolType(QgsSymbolV2.Marker)
-                sub_symbol=QgsMarkerSymbolV2.createSimple({
-                                               'name': 'circle'
-                                             , 'outline_color': "0.0.0.255"
-                                             , 'outline_style':'solid'
-                                             , 'outline_width_unit':'MM'
-                                             , 'scale_method':'diameter'
-                                             , 'size_unit':'MM'
-                                             , 'color': "255,0,0,0"
-                                             , 'offset': '0,0'
-                                             , 'angle':'0'
-                                             , 'size':'1'
-                                            })
-                symbolLayer.setSubSymbol(sub_symbol)
-                symbol = QgsMarkerSymbolV2([symbolLayer.clone()])  #---need clone!!! or take error when create again symbolLayer /symbol  
-                sub_rule = QgsRuleBasedRendererV2.Rule(symbol)
-                sub_rule.setLabel(u"ствол")
-                sub_rule.setDescription(u'devi_start.Dont replace it')
-                sub_rule.setActive(_enable_devi_end)
-                #sub_rule.setRuleKey(u'devi_start')   # MUST BE UNIQUE
-                sub_rule.setFilterExpression(u'') 
-                new_grp_rule.appendChild(sub_rule.clone())         #---need clone!!! or take error when create again symbolLayer /symbol
-                
+                if _enable_devi_end:
+                    symbolLayer = QgsGeometryGeneratorSymbolLayerV2.create()
+                    symbolLayer.setGeometryExpression(' end_point( geom_from_wkt( "{}{}" ))'.format(_prefix,_join_what))  #  end_point(  geom_from_wkt( "_devi" ))
+                    symbolLayer.setSymbolType(QgsSymbolV2.Marker)
+                    sub_symbol=QgsMarkerSymbolV2.createSimple({
+                                                   'name': 'circle'
+                                                 , 'outline_color': "0.0.0.255"
+                                                 , 'outline_style':'solid'
+                                                 , 'outline_width_unit':'MM'
+                                                 , 'scale_method':'diameter'
+                                                 , 'size_unit':'MM'
+                                                 , 'color': "255,0,0,0"
+                                                 , 'offset': '0,0'
+                                                 , 'angle':'0'
+                                                 , 'size':'1'
+                                                })
+                    symbolLayer.setSubSymbol(sub_symbol)
+                    symbol = QgsMarkerSymbolV2([symbolLayer.clone()])  #---need clone!!! or take error when create again symbolLayer /symbol  
+                    sub_rule = QgsRuleBasedRendererV2.Rule(symbol)
+                    sub_rule.setLabel(u"ствол")
+                    sub_rule.setDescription(u'devi_end.Dont replace it')
+                    sub_rule.setActive(True)
+                    #sub_rule.setRuleKey(u'devi_start')   # MUST BE UNIQUE
+                    sub_rule.setFilterExpression(u'') 
+                    new_grp_rule.appendChild(sub_rule.clone())         #---need clone!!! or take error when create again symbolLayer /symbol
+                    
                 #---------Добавляем новое правило под текущее 
                 rule.appendChild(new_grp_rule.clone())            #---need clone!!! or take error when create again symbolLayer /symbol
+
             #---refresh layer in LEGEND
             progress.setText('<b>Refresh layer in legend</b>')
             Layer_to_update.setRendererV2(layerCurrentStyleRendere)
