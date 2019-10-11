@@ -303,12 +303,13 @@ class TigJoinDeviLayersAlgorithm(GeoAlgorithm):
                     symbolLayer.setSymbolType(QgsSymbolV2.Marker)
                     sub_symbol=QgsMarkerSymbolV2.createSimple({
                                                    'name': 'circle'
-                                                 , 'outline_color': "255.0.0.0"
+                                                 , 'outline_color': "227,26,28,255"
                                                  , 'outline_style':'solid'
                                                  , 'outline_width_unit':'MM'
+                                                 , 'outline_width': '0'
                                                  , 'scale_method':'diameter'
                                                  , 'size_unit':'MM'
-                                                 , 'color': "227,26,28,255"
+                                                 , 'color': "255,0,0,0"
                                                  , 'offset': '0,0'
                                                  , 'angle':'0'
                                                  , 'size':'2'
