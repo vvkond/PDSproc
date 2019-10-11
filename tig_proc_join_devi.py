@@ -316,7 +316,7 @@ class TigJoinDeviLayersAlgorithm(GeoAlgorithm):
                     symbolLayer.setSubSymbol(sub_symbol)
                     symbol = QgsMarkerSymbolV2([symbolLayer.clone()])  #---need clone!!! or take error when create again symbolLayer /symbol  
                     sub_rule = QgsRuleBasedRendererV2.Rule(symbol)
-                    sub_rule.setLabel(u"ствол")
+                    sub_rule.setLabel(u"устье")
                     sub_rule.setDescription(u'devi_start.Dont replace it')
                     sub_rule.setActive(True)
                     #sub_rule.setRuleKey(u'devi_start')   # MUST BE UNIQUE
@@ -366,7 +366,7 @@ class TigJoinDeviLayersAlgorithm(GeoAlgorithm):
                     symbolLayer.setSubSymbol(sub_symbol)
                     symbol = QgsMarkerSymbolV2([symbolLayer.clone()])  #---need clone!!! or take error when create again symbolLayer /symbol  
                     sub_rule = QgsRuleBasedRendererV2.Rule(symbol)
-                    sub_rule.setLabel(u"ствол")
+                    sub_rule.setLabel(u"забой")
                     sub_rule.setDescription(u'devi_end.Dont replace it')
                     sub_rule.setActive(True)
                     #sub_rule.setRuleKey(u'devi_start')   # MUST BE UNIQUE
