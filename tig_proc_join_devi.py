@@ -77,7 +77,7 @@ class TigJoinDeviLayersAlgorithm(GeoAlgorithm):
     ENABLE_DEVI_ST="ENABLE_DEVI_ST"
     ENABLE_DEVI_END="ENABLE_DEVI_END"
     ENABLE_DEVI_LINE="ENABLE_DEVI_LINE"
-
+    
     ##_joinfield__to=optional field Layer_to_update
     ##_joinfield__from=optional field Layer_from_update
 
@@ -97,7 +97,7 @@ class TigJoinDeviLayersAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Join devi layer')
+        self.name = u'Join devi layer'
         self.i18n_name = u'Подключение слоя инклинометрии'
 
         # The branch of the toolbox under which the algorithm will appear

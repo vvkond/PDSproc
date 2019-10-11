@@ -33,10 +33,11 @@ class TigSurfaceIntersectCorrectAlgorithm(GeoAlgorithm):
     BOTTOM_SURFACE = 'BOTTOM_SURFACE'
 
     def defineCharacteristics(self):
-        self.name = self.tr(u'Surface intersection')
+        self.name = u'Surface intersection'
+        self.i18n_name = u'Пересечение поверхностей'
 
         # The branch of the toolbox under which the algorithm will appear
-        self.group = u'Grids'
+        self.group = self.tr(u'Grids')
 
         self.addParameter(ParameterRaster(self.TOP_SURFACE,
                                           self.tr('Top surface'), False))

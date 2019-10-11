@@ -117,7 +117,7 @@ class TigCreateMultilineRuleLabelAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Create multiline ruled label')
+        self.name = u'Create multiline ruled label'
         self.i18n_name = u'Создание многострочной подписи на оснвое правил'
 
         # The branch of the toolbox under which the algorithm will appear

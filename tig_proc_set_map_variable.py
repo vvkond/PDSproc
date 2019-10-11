@@ -134,7 +134,7 @@ class TigSetMapVariable(GeoAlgorithm):
         with some other properties.
         """
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Set map variable')
+        self.name = u'Set map variable'
         self.i18n_name = u'Задание переменных карты'
 
         # The branch of the toolbox under which the algorithm will appear

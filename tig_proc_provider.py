@@ -31,6 +31,10 @@ __revision__ = '$Format:%H$'
 import importlib
 from processing.core.AlgorithmProvider import AlgorithmProvider
 from processing.core.ProcessingConfig import Setting, ProcessingConfig
+from PyQt4.QtCore import *
+from PyQt4.QtGui import *
+import os
+
 
 def load_class(full_class_string,on_except=None):
     """
@@ -43,11 +47,12 @@ def load_class(full_class_string,on_except=None):
         module = importlib.import_module(module_path)
         # Finally, we retrieve the Class
         return getattr(module, class_str)
-    except:
+    except Exception as e:
+        QtGui.QMessageBox.critical(None, u'Error', str(e), QtGui.QMessageBox.Ok)  
         if on_except is not None:
             return on_except
         else:
-            raise 
+            raise e 
 
 
 TigSurfitAlgorithm                      =load_class('PDSproc.tig_proc_algorithm.TigSurfitAlgorithm'                                    ,on_except=lambda:None)
@@ -76,29 +81,51 @@ class TigSurfitProvider(AlgorithmProvider):
 
     def __init__(self):
         AlgorithmProvider.__init__(self)
+        
+        # initialize plugin directory
+        self.plugin_dir = os.path.dirname(__file__)
+        # initialize locale
+        locale = QSettings().value('locale/userLocale')[0:2]
+        locale_path = os.path.join(
+            self.plugin_dir,
+            'i18n',
+            'PDSproc_{}.qm'.format(locale))
+
+        if os.path.exists(locale_path):
+            self.translator = QTranslator()
+            self.translator.load(locale_path)
+
+            if qVersion() > '4.3.3':
+                QCoreApplication.installTranslator(self.translator)
+        
 
         # Load algorithms
-        self.alglist = [
-                        TigSurfitAlgorithm() 
-                        #,TigMergeLayersAlgorithm(), #use default QGIS ALG   processing.tools.general.runalg("qgis:mergevectorlayers")
-                        ,TigContouringAlgorithm()
-                        ,TigTriangleAlgorithm()
-                        ,TigReservesByRasterAlgorithm()
-                        ,TigSurfaceCorrectionAlgorithm()
-                        ,TigSurfaceIntersectCorrectAlgorithm()
-                        ,TigVolumeMethodAlgorithm()
-                        ,TigUpdatePointLocationAlgorithm()
-                        ,TigSetCustomProp()
-                        ,TigSetPdsCustomProp()
-                        ,TigUpdateLabelLocationAlgorithm()
-                        ,TigUpdateTableFieldAlgorithm()
-                        ,TigCreateMultilineRuleLabelAlgorithm()
-                        ,TigSetMapVariable()
-                        ,TigShowRuleLabelContours()
-                        ,TigJoinLayersAlgorithm()
-                        ,TigSwitchLayerStyleAlgorithm()
-                        ,TigJoinDeviLayersAlgorithm()
-                        ]
+        try:
+            self.alglist = [
+                            TigSurfitAlgorithm() 
+                            #,TigMergeLayersAlgorithm(), #use default QGIS ALG   processing.tools.general.runalg("qgis:mergevectorlayers")
+                            ,TigContouringAlgorithm()
+                            ,TigTriangleAlgorithm()
+                            ,TigReservesByRasterAlgorithm()
+                            ,TigSurfaceCorrectionAlgorithm()
+                            ,TigSurfaceIntersectCorrectAlgorithm()
+                            ,TigVolumeMethodAlgorithm()
+                            ,TigUpdatePointLocationAlgorithm()
+                            ,TigSetCustomProp()
+                            ,TigSetPdsCustomProp()
+                            ,TigUpdateLabelLocationAlgorithm()
+                            ,TigUpdateTableFieldAlgorithm()
+                            ,TigCreateMultilineRuleLabelAlgorithm()
+                            ,TigSetMapVariable()
+                            ,TigShowRuleLabelContours()
+                            ,TigJoinLayersAlgorithm()
+                            ,TigSwitchLayerStyleAlgorithm()
+                            ,TigJoinDeviLayersAlgorithm()
+                            ]
+        except Exception as e:
+            QtGui.QMessageBox.critical(None, u'Error', str(e), QtGui.QMessageBox.Ok)  
+
+            
         self.alglist=filter(lambda alg:alg is not None, self.alglist)
         for alg in self.alglist:
             alg.provider = self

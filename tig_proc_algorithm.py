@@ -68,10 +68,11 @@ class TigSurfitAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr('Create grid with faults')
+        self.name = 'Create grid with faults'
+        self.i18n_name = u'Создание поверхности с учетом разломов'
 
         # The branch of the toolbox under which the algorithm will appear
-        self.group = u'Grids'
+        self.group = self.tr(u'Grids')
 
         self.addParameter(ParameterVector(self.INPUT_LAYER,
                                           u'Исходные данные 1',

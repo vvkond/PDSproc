@@ -20,7 +20,7 @@ from processing.core.GeoAlgorithm import GeoAlgorithm
 from processing.core.parameters import ParameterMultipleInput
 from processing.core.parameters import ParameterRaster
 from processing.core.parameters import ParameterVector
-from processing.core.parameters import ParameterTableField,ParameterTableMultipleField
+from processing.core.parameters import ParameterTableField,ParameterTableMultipleField,ParameterMultipleInput
 from processing.core.parameters import ParameterBoolean,ParameterString
 from processing.core.outputs import OutputVector
 from processing.tools import dataobjects, vector
@@ -68,7 +68,7 @@ class TigJoinLayersAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Join layers')
+        self.name = u'Join layers'
         self.i18n_name = u'Создание связей'
 
         # The branch of the toolbox under which the algorithm will appear

@@ -75,7 +75,7 @@ class TigUpdateLabelLocationAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Update label location')
+        self.name = u'Update label location'
         self.i18n_name = u'Обновление расположения подписей'
 
         # The branch of the toolbox under which the algorithm will appear

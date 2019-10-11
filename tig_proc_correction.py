@@ -36,10 +36,11 @@ class TigSurfaceCorrectionAlgorithm(GeoAlgorithm):
     INPUT_RASTER = 'INPUT_RASTER'
 
     def defineCharacteristics(self):
-        self.name = self.tr(u'Surface correction')
+        self.name = u'Surface correction'
+        self.i18n_name = u'Корректировка поверхности'
 
         # The branch of the toolbox under which the algorithm will appear
-        self.group = u'Grids'
+        self.group = self.tr(u'Grids')
 
         self.addParameter(ParameterRaster(self.INPUT_RASTER,
                                           u'Поверхность для корректировки', False))

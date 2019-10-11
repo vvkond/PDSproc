@@ -62,7 +62,7 @@ class TigSetPdsCustomProp(GeoAlgorithm):
         with some other properties.
         """
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Set selected layers pds custom properies')
+        self.name = u'Set selected layers pds custom properies'
         self.i18n_name = u'Задание свойств pds у выбранных слоев'
 
         # The branch of the toolbox under which the algorithm will appear

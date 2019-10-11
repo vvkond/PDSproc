@@ -60,7 +60,7 @@ class TigSwitchLayerStyleAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Switch layer style')
+        self.name = u'Switch layer style'
         self.i18n_name = u'Переключение стиля слоя'
 
         # The branch of the toolbox under which the algorithm will appear

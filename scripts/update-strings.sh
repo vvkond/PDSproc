@@ -54,3 +54,4 @@ else
   echo "No need to edit any translation files (.ts) because no python files"
   echo "has been updated since the last update translation. "
 fi
+pause 

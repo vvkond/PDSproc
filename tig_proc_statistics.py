@@ -45,7 +45,8 @@ class TigStatisticsAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Calculate Statistic')
+        self.name = u'Calculate Statistic'
+        self.i18n_name = u'Рассчет статистики'
 
         # The branch of the toolbox under which the algorithm will appear
         self.group = self.tr(u'Tools')

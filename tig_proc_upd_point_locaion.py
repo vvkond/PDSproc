@@ -58,7 +58,7 @@ class TigUpdatePointLocationAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Update well location')
+        self.name = u'Update well location'
         self.i18n_name = u'Обновление расположения скважин'
 
         # The branch of the toolbox under which the algorithm will appear

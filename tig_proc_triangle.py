@@ -54,7 +54,8 @@ class TigTriangleAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Triangulate')
+        self.name = u'Triangulate'
+        self.i18n_name = u'Триангуляция'
 
         # The branch of the toolbox under which the algorithm will appear
         self.group = self.tr(u'Vectors')

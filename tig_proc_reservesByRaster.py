@@ -58,7 +58,9 @@ class TigReservesByRasterAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Reserves calculation')
+        self.name = u'Reserves calculation'
+        self.i18n_name = u'Рассчет остаточных запасов'
+        
         self.description = self.tr(u"Calculate HC reserves using TopTVD raster and OWC\
                                     polygon imported from corporate database")
 

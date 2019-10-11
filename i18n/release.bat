@@ -1,0 +1,2 @@
+lrelease PDSProc.pro
+pause

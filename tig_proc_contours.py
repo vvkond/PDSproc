@@ -57,7 +57,8 @@ class TigContouringAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Create isolines')
+        self.name = u'Create isolines'
+        self.i18n_name = u'Снятие изолиний'
 
         # The branch of the toolbox under which the algorithm will appear
         self.group = self.tr(u'Grids')

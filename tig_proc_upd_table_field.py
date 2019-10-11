@@ -68,7 +68,7 @@ class TigUpdateTableFieldAlgorithm(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Update table field')
+        self.name = u'Update table field'
         self.i18n_name = u'Обновление значений таблицы'
 
         # The branch of the toolbox under which the algorithm will appear

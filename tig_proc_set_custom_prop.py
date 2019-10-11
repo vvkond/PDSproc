@@ -60,8 +60,8 @@ class TigSetCustomProp(GeoAlgorithm):
         with some other properties.
         """
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Set custom property')
-        self.i18n_name = u'Задание свойств слоя'
+        self.name = u'Set custom property'
+        self.i18n_name = u'Задание дополнительных переменных слоя'
 
         # The branch of the toolbox under which the algorithm will appear
         self.group = self.tr(u'Tools')

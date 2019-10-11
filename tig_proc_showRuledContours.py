@@ -67,7 +67,7 @@ class TigShowRuleLabelContours(GeoAlgorithm):
         """
 
         # The name that the user will see in the toolbox
-        self.name = self.tr(u'Show contours with step')
+        self.name = u'Show contours with step'
         self.i18n_name = u'Отображение контуров с указанным шагом'
 
         # The branch of the toolbox under which the algorithm will appear

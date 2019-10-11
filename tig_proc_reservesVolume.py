@@ -36,11 +36,13 @@ class TigVolumeMethodAlgorithm(GeoAlgorithm):
     VNK_VALUE = 'VNK'
 
     def defineCharacteristics(self):
-        self.name = self.tr(u'Volume method')
-        self.description = u'Подсчет запасов объемным методом'
+        self.name = u'Volume method'
+        self.i18n_name = u'Подсчет запасов объемным методом'
+        
+        self.description = self.tr(u'Calculate reserves using Volume method')
 
         # The branch of the toolbox under which the algorithm will appear
-        self.group = u'Grids'
+        self.group = self.tr(u'Grids')
 
         self.addParameter(ParameterRaster(self.TOP_SURFACE,
                                           u'Поверхность кровли', False))
