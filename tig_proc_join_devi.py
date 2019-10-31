@@ -247,7 +247,7 @@ class TigJoinDeviLayersAlgorithm(GeoAlgorithm):
         joinObject.targetFieldName = _joinfield__to
         joinObject.memoryCache = _use_cache
         joinObject.prefix=_prefix
-        joinObject.setJoinFieldNamesSubset(_join_what)
+        joinObject.setJoinFieldNamesSubset([_join_what])
         Layer_to_update.addJoin(joinObject)
         
         
